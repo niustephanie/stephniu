@@ -1,0 +1,72 @@
+a {
+	color: black;
+	font-family: "Georgia";
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+}
+
+body {
+	background-image: url("https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg");
+}
+
+.entry {
+	padding-left: 10%;
+	color: white;
+	font-family: "Georgia";
+}
+
+.fade {
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+}
+
+.fade:hover {
+	opacity: 0.5;
+ }
+
+
+#footer {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32;
+  	height: 50px;
+}
+
+.horizontal-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+	width: 60%;
+}
+
+p {
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+
+.tile {
+	width: 21%;
+	height: 21%;
+	padding-bottom: 4%;
+}
+
+.vertical-flex {
+	display: flex;
+	flex-direction: column;
+}
