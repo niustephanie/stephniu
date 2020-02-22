@@ -1,33 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans&display=swap');
 a {
 	color: black;
-	font-family: "Georgia";
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 	text-align: center;
 	text-decoration: none;
 }
 
+.back {
+	cursor: pointer;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 24px;
+	margin-left: 5%;
+}
 body {
-	background-image: url("https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg");
+
+}
+
+.content {
+	display: none;
 }
 
 .entry {
 	padding-left: 10%;
-	color: white;
-	font-family: "Georgia";
+	color: gray;
+	font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .fade {
 	opacity: 1;
-   transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
 }
 
 .fade:hover {
 	opacity: 0.5;
  }
 
+#filtertext {
+	font-size: 24px;
+	color: rgb(161, 160, 160);
+}
+
+#filters {
+	margin-left: 7%;
+}
+
+.flex-center {
+	justify-content: space-around;
+}
+
+.flex-left {
+	justify-content: flex-start;
+}
 
 #footer {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 	height: 50px;
 	line-height: 50px;
@@ -35,15 +62,18 @@ body {
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Quattrocento', serif;
 	font-size: 32;
-  	height: 50px;
+  height: 50px;
 }
 
 .horizontal-flex {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+}
+
+.label {
+	padding-bottom: 2%;
 }
 
 nav {
@@ -55,15 +85,38 @@ nav {
 }
 
 p {
- 	font-family: 'Open Sans', sans-serif;
+ 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 18px;
 }
 
+.subtitle {
+	font-family: 'Quattrocento', serif;
+	font-size: 24px;
+}
+
+.tag {
+	border: .5px solid rgb(161, 160, 160);
+	color: rgb(161, 160, 160);
+	border-radius: 5px;
+	cursor: pointer;
+	height: 20px;
+	padding: 5px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.textContainer {
+	background-color: white;
+	background-image: url("https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg");
+	margin: 5%;
+	padding: 2%;
+}
 
 .tile {
 	width: 21%;
 	height: 21%;
-	padding-bottom: 4%;
+	cursor: pointer;
+	font-family: 'Quattrocento', serif;
 }
 
 .vertical-flex {

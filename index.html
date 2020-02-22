@@ -1,39 +1,117 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    	<link rel="stylesheet" href="style.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/crab.png"/>
 
-    	<link rel="icon" type="image/png" href="images/crab.png"/>
-
-    	<title>Stephanie Niu</title>
+    <title>Stephanie Niu</title>
 	</head>
 
 	<body>
 		<div class = "vertical-flex">
-			<div class="horizontal-flex">
+			<div class="horizontal-flex flex-center">
 				<h1 href="index.html" class="fade">Stephanie Niu</h1>
 				<nav>
-					<a href="work.html" class="fade">Work</a> 
-					<a href="poetry.html" class="fade">Poetry</a> 
-					<a href="audio.html" class="fade">Audio</a> 
-					<a href="about.html" class="fade">About</a> 
+					<a href="work.html" class="subtitle fade">Work</a>
+					<a href="poetry.html" class="subtitle fade">Poetry</a>
+					<a href="audio.html" class="subtitle fade">Audio</a>
+					<a href="about.html" class="subtitle fade">About</a>
 				</nav>
 			</div>
+			<div class="horizontal-flex flex-left" id="filters">
+				<p id="filtertext">Filter by: </p>
+				<p class="tag" id="tag1" onclick=filter("tag1")>augmented reality</p>
+				<p class="tag" id="tag2" onclick=filter("tag2")>mapping</p>
+				<p class="tag" id="tag3" onclick=filter("tag3")>storytelling</p>
+				<p class="tag" id="tag4" onclick=filter("tag4")>audio</p>
+				<p class="tag" id="tag5" onclick=filter("tag5")>poetry</p>
+				<p class="tag" id="tag6" onclick=filter("tag6")>data visualization</p>
+				<p class="tag" id="tag7" onclick=filter("tag7")>web</p>
+				<p class="tag" id="tag8" onclick=filter("tag8")>product</p>
 			</div>
-			<div class="horizontal-flex">
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
 			</div>
-			<div class="horizontal-flex">
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+
+
+			<div class="content" id="1">
+				<p class="back subtitle fade" onclick=hide(1)> < Back</p>
+			<div class="textContainer">
+			<div class="vertical-flex">
+				<h1>Title</h1>
+				<h2>Subtitle</h2>
+
+				<h3> Section 1 </h3>
+				<p> The Chinese Railroad Workers in North America Project is a landmark example of the power of research and visualization in unearthing previously untold histories. The history of the Chinese laborers who toiled for the railroad that connected America’s coasts was almost completely unwritten before this project. Relying on archaeological findings, oral histories of railroad worker descendants, and innovative visualization techniques, the project has created the first definitive history of the Chinese railroad workers that tells the story from their perspective. </p>
+				<img src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+			</div>
+			</div>
+			</div>
+			<div class="horizontal-flex flex-center">
+				<img class="tile fade tag1 tag2" onclick = "show(1)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade tag1" onclick = "show(2)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade tag1" onclick = "show(3)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade" onclick = "show(4)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+			</div>
+			<div class="horizontal-flex flex-center">
+				<p class="label">Label 1</p>
+				<p class="label">Label 2</p>
+				<p class="label">Label 3</p>
+				<p class="label">Label 4</p>
+			</div>
+			<div class="horizontal-flex flex-center">
+				<img class="tile fade tag2" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+			</div>
+			<div class="horizontal-flex flex-center">
+				<p class="label">Label 5</p>
+				<p class="label">Label 6</p>
+				<p class="label">Label 7</p>
+				<p class="label">Label 8</p>
 			</div>
 		</div>
 		<p id="footer">Built by Stephanie Niu, 2020</p>
 	</body>
+
+	<script>
+	function show(id) {
+		var x = document.getElementById(id);
+	  x.style.display = "block";
+	}
+
+	function hide(id) {
+		var x = document.getElementById(id);
+		x.style.display = "none";
+	}
+
+	function filter(tag) {
+
+		currTag = document.getElementById(tag);
+		tiles = document.getElementsByClassName("tile");
+		labels = document.getElementsByClassName("label");
+
+		console.log(currTag.style.backgroundColor);
+		if (currTag.style.backgroundColor=="rgb(161, 160, 160)") {
+			currTag.style.backgroundColor="white";
+			currTag.style.color="rgb(161, 160, 160)";
+
+			for (i = 0; i < tiles.length; i++) {
+					tiles[i].style.display = "block";
+					labels[i].style.display = "block";
+				}
+		}
+		else {
+			currTag.style.backgroundColor="rgb(161, 160, 160)";
+			currTag.style.color="white";
+
+			for (i = 0; i < tiles.length; i++) {
+				if (!tiles[i].classList.contains(tag)) {
+					tiles[i].style.display = "none";
+					labels[i].style.display = "none";
+				}
+			}
+		}
+	}
+
+	</script>
 </html>
