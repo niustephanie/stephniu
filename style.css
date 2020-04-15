@@ -19,20 +19,23 @@ a {
 	font-size: 12px;
 	font-family: 'Courier Prime', monospace;
 	margin-bottom: 2%;
-	margin-right: 10%;
+	margin-right: 5%;
 	text-align: right;
 
-}
-
-.audio {
-	margin-left: 10%;
-	margin-right: 10%;
 }
 
 .back {
 	cursor: pointer;
 	font-family: 'Courier Prime', monospace;
 	font-size: 24px;
+}
+
+.bodyImg {
+	margin-left: 0;
+}
+
+.caption {
+	text-align: center;
 }
 
 .center {
@@ -125,6 +128,13 @@ h4 {
 	flex-wrap: wrap;
 }
 
+hr {
+	border: solid .5px rgb(161, 160, 160);
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
 .icon {
 	width: 25;
 	height: 25;
@@ -179,7 +189,6 @@ p {
 	color: black;
 	font-family: 'Courier Prime', monospace;
 	font-size: 18px;
-	padding-left: 10%;
 }
 
 .return {
@@ -188,11 +197,11 @@ p {
 }
 
 .sidebar {
-	width: 52.5%;
+	width: 42.5%;
 }
 
 .sideimg {
-	width: 42.5%;
+	width: 52.5%;
 }
 
 .selected {
@@ -227,8 +236,6 @@ p {
 
 .text-container {
 	background-color: white;
-	margin-left: 5%;
-	margin-right: 5%;
 	margin-bottom: 5%;
 	padding: 2%;
 }
