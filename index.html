@@ -8,110 +8,230 @@
 	</head>
 
 	<body>
-		<div class = "vertical-flex">
-			<div class="horizontal-flex flex-center">
-				<h1 href="index.html" class="fade">Stephanie Niu</h1>
+		<div class = "vertical-flex margins">
+			<div class="horizontal-flex flex-between" style="margin-top: 7%;">
+				<h1 href="index.html" class="fade" style="font-size: 40px; margin-top: 0;">Stephanie Niu</h1>
 				<nav>
-					<a href="work.html" class="subtitle fade">Work</a>
-					<a href="poetry.html" class="subtitle fade">Poetry</a>
-					<a href="audio.html" class="subtitle fade">Audio</a>
-					<a href="about.html" class="subtitle fade">About</a>
+					<a onclick=hide() class="label fade selected">Work</a>
+					<a href="poetry.html" class="label fade">Poetry</a>
+					<a href="audio.html" class="label fade">Audio</a>
+					<a href="about.html" class="label fade">About</a>
 				</nav>
 			</div>
-			<div class="horizontal-flex flex-left" id="filters">
-				<p id="filtertext">Filter by: </p>
+			<div id="showfilters" class="filtertext fade" onclick=toggleFilters()>Show Filters + </div>
+			<div id="hidefilters" class="filtertext fade" onclick=toggleFilters() style="display:none;">Hide Filters - </div>
+			<div class="horizontal-flex flex-left" id="filters" style="margin-top: -1%; visibility: hidden;">
 				<p class="tag" id="tag1" onclick=filter("tag1")>augmented reality</p>
 				<p class="tag" id="tag2" onclick=filter("tag2")>mapping</p>
-				<p class="tag" id="tag3" onclick=filter("tag3")>storytelling</p>
-				<p class="tag" id="tag4" onclick=filter("tag4")>audio</p>
-				<p class="tag" id="tag5" onclick=filter("tag5")>poetry</p>
-				<p class="tag" id="tag6" onclick=filter("tag6")>data visualization</p>
+				<p class="tag" id="story" onclick=filter("story")>storytelling</p>
+				<p class="tag" id="dataviz" onclick=filter("dataviz")>data visualization</p>
 				<p class="tag" id="tag7" onclick=filter("tag7")>web</p>
 				<p class="tag" id="tag8" onclick=filter("tag8")>product</p>
 			</div>
-			</div>
+			
 
-
-			<div class="content" id="1">
-				<p class="back subtitle fade" onclick=hide(1)> < Back</p>
-			<div class="textContainer">
+			<div class="content" id="crrw">
+			<p></p>
+			<div class="text-container">
 			<div class="vertical-flex">
-				<h1>Title</h1>
-				<h2>Subtitle</h2>
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Visualizing The Railroad</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center"> A Virtual Reconstruction of Key Historic Sites </h3>
 
-				<h3> Section 1 </h3>
-				<p> The Chinese Railroad Workers in North America Project is a landmark example of the power of research and visualization in unearthing previously untold histories. The history of the Chinese laborers who toiled for the railroad that connected America’s coasts was almost completely unwritten before this project. Relying on archaeological findings, oral histories of railroad worker descendants, and innovative visualization techniques, the project has created the first definitive history of the Chinese railroad workers that tells the story from their perspective. </p>
-				<img src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+				<h2 class="center">Subtitle</h2>
+				<div class = "horizontal-flex flex-between">
+					<img class="sideimg" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564519128192-5895DO6VNRN4K7CCU1E6/ke17ZwdGBToddI8pDm48kNPF6JdBdcbUF4SBVYF4tjkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKchl4ZSWSKkOn6ewqTZV9xiUzyIio8GETD-1ydPUJFETQrK0tq5xzj4gni2cgjv5kT/header.jpg?format=750w"></img>
+				<p class="sidebar"> The Chinese Railroad Workers in North America Project is a landmark example of the power of research and visualization in unearthing previously untold histories. The history of the Chinese laborers who toiled for the railroad that connected America’s coasts was almost completely unwritten before this project. Relying on archaeological findings, oral histories of railroad worker descendants, and innovative visualization techniques, the project has created the first definitive history of the Chinese railroad workers that tells the story from their perspective. </p>
+				
+				</div>
 			</div>
 			</div>
 			</div>
-			<div class="horizontal-flex flex-center">
-				<img class="tile fade tag1 tag2" onclick = "show(1)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade tag1" onclick = "show(2)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade tag1" onclick = "show(3)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade" onclick = "show(4)" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
+
+			<div class="content" id="island">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Island of Migrants</h1>
+				<h1 class="hidden">Title</h1>
 			</div>
-			<div class="horizontal-flex flex-center">
-				<p class="label">Label 1</p>
-				<p class="label">Label 2</p>
-				<p class="label">Label 3</p>
-				<p class="label">Label 4</p>
+				<h3 class="center"> Investigating Christmas Island's Moving Populations </h3>
+			
+				<div class = "horizontal-flex flex-between">
+					<div class="sideimg"><img src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1568490705530-U7QV9IK4E29YX2DNZ4QX/ke17ZwdGBToddI8pDm48kJKo3YTR7zgUvInmXMbZ6zZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0geeCvn1f36QDdcifB7yxGjTk-SMFplgtEhJ5kBshkhu5q5viBDDnY2i_eu2ZnquSA/IMG_6574.JPG?format=500w"></img>
+				<h4>Watching crabs cross a custom-built bridge during the migration.</h4>
+
+					</div>
+				<div class="sidebar"> 
+				<h2 class="center">Background</h2>
+				<p>Christmas Island is a tiny rock in the Indian Ocean, hundreds of miles from the nearest land. Despite its physical isolation, the island is a microcosm of intersecting migrations. Every wet season, millions of endemic red crabs descend from the jungles to the coast in the Christmas Island <a href="https://www.youtube.com/watch?v=036-38HfeXY">red crab migration.</a> The island is crisscrossed with a network of manmade tunnels, bridges, and fences to get these crabs to their destination safely. At the same time, the island holds one of Australia’s largest immigration detention centers, built and run like a prison for boat-bound asylum seekers hoping to enter Australia’s borders. This project uses narrative interview to investigate the way that these two migrations, animal and human, are treated differently.</p></div>
+				
+				</div>
+
+				<div class = "horizontal-flex flex-between">
+				<div class="sidebar"> 
+				<h2 class="center">A Research Journey</h2>
+				<p>In October 2018, I traveled to Christmas Island for 2 months to conduct interviews with islanders, asylum seekers, and immigration activists and tell the story of these intersection migrations. This journey is documented through a personal blog, <a href="https://shoreboundjourney.wordpress.com/">Shorebound.</a></p>
+
+				<p>My final product, an audio podcast, was be presented at Digital Frontiers 2019. You can listen to a preview of the podcast, <a href="https://anchor.fm/followingthewater">Following the Water</a>, anywhere you get your podcasts. This project has been presented at several conferences including Stanford’s <em>April Symposium of Research and Public Service</em>, and <em>The Gallery</em>, a student-run art exhibit.</p></div>
+
+				<div class="sideimg"><img src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1568490704775-FXIYLFM5F0JUTTOUYQJ6/ke17ZwdGBToddI8pDm48kPtbtoixaHMjmMm9J4xuuqN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0gmXcXvEVFTLbYX9CdVcGe6JS58KqMMHldDX8OwV1ANAcRblOOiKckdhziqkzys_JA/IMG_6814.JPG?format=500w"></img>
+				<h4>A cliffside interview</h4></div>
+				
+				</div>
+
+				<div class = "horizontal-flex flex-between">
+				<div class="sidebar"> 
+				<p>For fun: a video of the natural beauty of the island, made from my time there.</p> 
+				<a href="https://anchor.fm/followingthewater"><h2 class="center">Podcast</h2></a>
+				<a href="https://shoreboundjourney.wordpress.com/"><h2 class="center">Blog</h2></a></div>
+
+				<div class="sideimg"><iframe height="315" src=https://www.youtube.com/embed/iCsCweMYdpA></iframe>
+				<h4>A cliffside interview</h4></div>
+				
+				</div>
+
 			</div>
-			<div class="horizontal-flex flex-center">
-				<img class="tile fade tag2" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
-				<img class="tile fade" src="https://cdn.britannica.com/84/5384-050-C4D31AAA/Highveld-grassland-Heidelberg-SAf-Johannesburg.jpg"></img>
 			</div>
-			<div class="horizontal-flex flex-center">
-				<p class="label">Label 5</p>
-				<p class="label">Label 6</p>
-				<p class="label">Label 7</p>
-				<p class="label">Label 8</p>
 			</div>
-		</div>
+
+			<div class="content" id="dbl">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>What Else C.S. Coterms Study</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center">How Diverse are Double Majors?</h3>
+
+				<img src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1583737986503-CUCTIFTYC06MNFA2WH1H/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIedjZT6_OBzi2ofH1EqNdNeCRxNMlbxs9807lIebBlcA/A1-StephanieNiu.png?format=1000w"></img>
+				<p> A recent trend at Stanford, particularly within the past five years, has been increased efforts to make computer science education accessible to more students with diverse interests. In 2014, Stanford introduced its experimental CS + X joint major that combined computer science with humanities fields like English and History; in 2015, the Digital Humanities minor was launched. Within the computer science department, opportunities like the Magic Grant through partnership with the Brown Institute for Media Innovation encourage computer science students to collaborate with students in journalism and media. In the context of recent emphasis on interdisciplinary education, this visualization examines how many computer science coterms studied non-CS majors as undergraduates and how many double majors crossed the disciplinary bounds of engineering, humanities, and sciences.</p>
+
+				<p>While the computer science program at Stanford is growing in popularity, many students pursuing the coterminal degree come from unconventional backgrounds. Among double majors (students with two bachelor’s degrees), what fields are represented, and what fields are most commonly combined? To answer this question, this visualization displays occurrences of double majors among Stanford C.S. coterms from 2014-2019. Double majoring is relatively uncommon; between 2014 and 2019, twenty-four C.S. coterms had more than one undergraduate major. To have enough data to show meaningful patterns, the visualization does not encode year and instead displays data from the entire 6-year period as a sample of Stanford’s most recent classes of coterms.</p>
+
+				<p>Data from Stanford Institutional Research and Decision Support 2014-2019 records.  </p>
+			</div>
+			</div>
+			</div>
+
+			<div class="horizontal-flex flex-between">
+				<div class="vertical-flex square tag1 tag2 dataviz story">
+					<div class="tile" onclick = "show('crrw')" style="background-image: url(https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564520764018-6MP0AG30HW5H9VCVI8J7/ke17ZwdGBToddI8pDm48kEZlYxHKw5rfOSt1itYoDy9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpybzIN9VzdBzzBIiqEp_IfQCzzLyXunsBm4gGUQMJBXBC3-04cYSpRBqRq5Baj3oNo/Screen%2BShot%2B2019-07-30%2Bat%2B4.46.46%2BPM.jpg?format=500w)">
+						<div class="overlay">
+						<h2 class="center overlay-text">A Virtual Reconstruction of Key Historic Sites</h2>
+					</div>
+					</div>
+					<p class="label">Visualizing the Railroad</p>
+				</div>
+				<div class="vertical-flex square story">
+					<img class="tile fade" onclick = "show('island')" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1568490837792-K7I2YT8SM4NWD1TGQE8F/ke17ZwdGBToddI8pDm48kJKo3YTR7zgUvInmXMbZ6zZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0geeCvn1f36QDdcifB7yxGjTk-SMFplgtEhJ5kBshkhu5q5viBDDnY2i_eu2ZnquSA/IMG_6574.JPG?format=500w"></img>
+					<p class="label">Island of Migrants</p>
+				</div>
+				<div class="vertical-flex square tag1">
+					<img class="tile fade" onclick = "show(3)" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1563750350208-GGYQAYLQIL92P0Z2EACV/ke17ZwdGBToddI8pDm48kFUnb1RVRuLbLr2fIvXnOJ1Zw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF_jL7MbtCs8_qL2xZcL0Q5mYyRrrb_zBn94YLXdHeg7DFvbuqF0GUInBxxtVhBOn4/image+%286%29.png?format=500w"></img>
+					<p class="label">Soil Tour</p>
+				</div>
+				<div class="vertical-flex square tag1 dataviz">
+					<img class="tile fade" onclick = "show(4)" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1583737734065-RORZDEAINNU3VXFJ849V/ke17ZwdGBToddI8pDm48kBumDsX4ogXm60Vdw2C34AlZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIbpobXtYQWgltAzoMYP0zd2LvNfoPSBFkSgYgQzJ6YGQ/Screen+Shot+2020-03-09+at+12.07.35+AM.png?format=750w"></img>
+					<p class="label">There's a Fly In My Soup</p>
+				</div>
+				<div class="vertical-flex square tag1 story">
+					<img class="tile fade" onclick = "show(5)" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1563750512133-NDL3A1IQB6VNUEDQJSSY/ke17ZwdGBToddI8pDm48kCbBcygRgXaxKQ5dmmz15btZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIddmZe7cYBlOuBooMpXpzoTltlugH4NiOab8nsmJvKSgKMshLAGzx4R3EDFOm1kBS/third-bg.jpg?format=750w"></img>
+					<p class="label">Gretel</p>
+				</div>
+				<div class="vertical-flex square tag1 dataviz">
+						<div class="tile" onclick = "show('dbl')" style="background-image: url(https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1583738096609-UNDP6WJRY9DFEK7KOMP6/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIedjZT6_OBzi2ofH1EqNdNeCRxNMlbxs9807lIebBlcA/A1-StephanieNiu.png?format=500w)">
+						<div class="overlay">
+						<h2 class="center overlay-text">How diverse are double majors among C.S. coterms?</h2>
+					</div></div>
+					<p class="label">Double Majors</p>
+				</div>
+				<div class="vertical-flex square tag2">
+					<img class="tile fade" onclick = "show(7)" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564522454598-5VR9FSHYDTT3RF66QJ3E/ke17ZwdGBToddI8pDm48kFO7-eH190NLCou88YkNJgVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpy9Z0HVaokR3YUAr096Dka8mZkqol6EMakBvoUKu5VsAoUsCYuB_U3GUtNEH4KLP7o/aktashif.png?format=1500w"></img>
+					<p class="label">Aktashif</p>
+				</div>
+				<div class="vertical-flex square tag3">
+					<img class="tile fade" onclick = "show(8)" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564523611593-9U12U0OLOKREBTGMG0QS/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/boys.jpg?format=750w"></img>
+					<p class="label">Streets of the World</p>
+				</div>
+				<div class="flex-spacer"></div>
+				<div class="flex-spacer"></div>
+				<div class="flex-spacer"></div>
+			</div>
+
+		
 		<p id="footer">Built by Stephanie Niu, 2020</p>
+		</div>
 	</body>
 
 	<script>
+	var filtersShown = false;
 	function show(id) {
+		hide();
+		console.log("opening");
 		var x = document.getElementById(id);
-	  x.style.display = "block";
+	 	 x.style.display = "block";
+	 	 x.classList.add("opened"); // marks the current box as opened
+	 	 //history.pushState(null, null ,"/test");
 	}
 
-	function hide(id) {
-		var x = document.getElementById(id);
-		x.style.display = "none";
+	// Hides any content box that is currently opened
+	function hide() {
+		var x = document.getElementsByClassName("opened");
+		console.log(x);
+		if (x.length == 0) return;
+		x[0].style.display = "none";
+		x[0].classList.remove("opened");
 	}
 
 	function filter(tag) {
-
 		currTag = document.getElementById(tag);
-		tiles = document.getElementsByClassName("tile");
-		labels = document.getElementsByClassName("label");
-
+		squares = document.getElementsByClassName("square"); // gets all vertical flexboxes that contain tile + label
 		console.log(currTag.style.backgroundColor);
 		if (currTag.style.backgroundColor=="rgb(161, 160, 160)") {
 			currTag.style.backgroundColor="white";
 			currTag.style.color="rgb(161, 160, 160)";
-
-			for (i = 0; i < tiles.length; i++) {
-					tiles[i].style.display = "block";
-					labels[i].style.display = "block";
+			for (i = 0; i < squares.length; i++) {
+				if (!squares[i].classList.contains(tag)) {
+					squares[i].style.display = "inline";
+					squares[i].style.opacity = 1;
+					squares[i].classList.add("return");
 				}
+			}
 		}
 		else {
 			currTag.style.backgroundColor="rgb(161, 160, 160)";
 			currTag.style.color="white";
-
-			for (i = 0; i < tiles.length; i++) {
-				if (!tiles[i].classList.contains(tag)) {
-					tiles[i].style.display = "none";
-					labels[i].style.display = "none";
+			for (i = 0; i < squares.length; i++) {
+				if (!squares[i].classList.contains(tag)) {
+					squares[i].style.display = "none";
+					squares[i].style.opacity = 0;
 				}
 			}
 		}
 	}
 
+	function toggleFilters() {
+		filters = document.getElementById("filters");
+		if (!filtersShown) {
+			filters.style.visibility="visible";
+			document.getElementById("showfilters").style.display="none";
+			document.getElementById("hidefilters").style.display="inline";
+			filtersShown = true;
+		}
+		else {
+			filters.style.visibility="hidden";
+			document.getElementById("showfilters").style.display="inline";
+			document.getElementById("hidefilters").style.display="none";
+			filtersShown = false;
+		}
+	}
 	</script>
 </html>
