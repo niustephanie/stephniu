@@ -309,18 +309,17 @@
 		currTag = document.getElementById(tag);
 		squares = document.getElementsByClassName("square"); // gets all vertical flexboxes that contain tile + label
 		console.log(currTag.style.backgroundColor);
-		if (currTag.style.backgroundColor=="rgb(161, 160, 160)") {
+		if (currTag.style.backgroundColor=="rgb(161, 160, 160)") { // deselect filter and re-display tiles
 			currTag.style.backgroundColor="white";
 			currTag.style.color="rgb(161, 160, 160)";
 			for (i = 0; i < squares.length; i++) {
 				if (!squares[i].classList.contains(tag)) {
-					squares[i].style.display = "inline";
-					squares[i].style.height = "400px";
+					squares[i].style.display = "flex";
 					squares[i].style.opacity = 1;
 				}
 			}
 		}
-		else {
+		else { // select filter and remove tiles
 			currTag.style.backgroundColor="rgb(161, 160, 160)";
 			currTag.style.color="white";
 			for (i = 0; i < squares.length; i++) {
