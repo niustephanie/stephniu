@@ -154,6 +154,7 @@ img {
 	text-align: center;
 	display: grid;
 	color: black;
+	margin-bottom: 15%;
 }
 
 nav {
@@ -189,11 +190,6 @@ p {
 	color: black;
 	font-family: 'Courier Prime', monospace;
 	font-size: 18px;
-}
-
-.return {
-	-webkit-animation: slide-in .7s ease-out;
-    -moz-animation: slide-in .7s ease-out;
 }
 
 .sidebar {
@@ -242,6 +238,7 @@ p {
 
 .tile {
 	background-size: contain;
+	background-size: cover;
 	border: none;
 	width: var(--tile-width);
 	height: var(--tile-width);
