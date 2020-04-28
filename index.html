@@ -1,16 +1,17 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/crab.png"/>
-
-    <title>Stephanie Niu</title>
+    	<link rel="stylesheet" href="style.css">
+    	<link rel="icon" type="image/png" href="images/crab.png"/>
+    	<title>Stephanie Niu</title>
+    	<meta name="author" content="Stephanie Niu">
+		<meta name="description" content="&quot; You have indeed done for us all our works. &quot;">
 	</head>
 
 	<body>
 		<div class = "vertical-flex margins">
 			<div class="horizontal-flex flex-between" style="margin-top: 7%;">
-				<h1 href="index.html" class="fade" style="font-size: 40px; margin-top: 0;" onclick=hide()>Stephanie Niu</h1>
+				<h1 href="index.html" class="fade" style="font-size: 40px; margin-top: 0; height:40px" onclick=hide()>Stephanie Niu</h1>
 				<nav>
 					<a onclick=hide() class="label fade selected">Work</a>
 					<a href="poetry.html" class="label fade">Poetry</a>
@@ -20,15 +21,13 @@
 			</div>
 			<div id="showfilters" class="filtertext fade" onclick=toggleFilters()>Show Filters + </div>
 			<div id="hidefilters" class="filtertext fade" onclick=toggleFilters() style="display:none;">Hide Filters - </div>
-			<div class="horizontal-flex flex-left" id="filters" style="margin-top: -1%; visibility: hidden;">
+			<div class="horizontal-flex flex-left" id="filters" style="visibility: hidden;">
 				<p class="tag" id="dataviz" onclick=filter("dataviz")>data visualization</p>
 				<p class="tag" id="story" onclick=filter("story")>storytelling</p>
 				<p class="tag" id="mapping" onclick=filter("mapping")>mapping</p>
 				<p class="tag" id="history" onclick=filter("history")>history</p>
 				<p class="tag" id="ar" onclick=filter("ar")>augmented reality</p>
 				<p class="tag" id="art" onclick=filter("art")>art</p>
-				<p class="tag" id="web" onclick=filter("web")>web</p>
-				<p class="tag" id="mobile" onclick=filter("mobile")>mobile</p>
 			</div>
 			
 			<!-- CRRW START -->
@@ -41,12 +40,12 @@
 				<h1>Visualizing The Railroad</h1>
 				<h1 class="hidden">Title</h1>
 			</div>
-				<h3 class="center"> A Virtual Reconstruction of Key Historic Sites </h3>
+				<h3 class="center"> A Digital Geography of the Transcontinental Railroad </h3>
 
 				<h2 class="center">Background</h2>
 				<div class = "horizontal-flex flex-between">
 					<div class="vertical-flex sideimg">
-						<img class="bodyImg" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564519128192-5895DO6VNRN4K7CCU1E6/ke17ZwdGBToddI8pDm48kNPF6JdBdcbUF4SBVYF4tjkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKchl4ZSWSKkOn6ewqTZV9xiUzyIio8GETD-1ydPUJFETQrK0tq5xzj4gni2cgjv5kT/header.jpg?format=750w"></img>
+						<img class="bodyImg" src="https://web.stanford.edu/group/chineserailroad/cgi-bin/website/wp-content/uploads/2018/08/header.jpg"></img>
 						<h4 class="caption">From the Chinese Railroad Workers project website</h4>
 					</div>
 				<div class="vertical-flex sidebar">
@@ -58,20 +57,97 @@
 				<hr>
 				<h2 class="center">A New Geography</h2>
 				<p>Despite the lack of practically any written records, including quantitative data, on the lives of the Chinese workers, geographic data on the route of the railroad does exist. Spanning the Sierras and long stretches of Utah desert, the western portion of the Transcontinental Railroad traverses extremes of blizzard-condition peaks and scorching flats. The labor and perseverance of the workers through these conditions resulted in not just the successful completion of the railroad but feats of engineering ingenuity, at no small cost to human life. </p>
-				<h2 class="center">Publication</h2>
-				<p>Geography of Chinese Workers Building the Transcontinental Railroad is an interactive map of the railroad and its key narrative points, incorporating historic essay and photographs with digital recreations of these key locations. An interactive top-map allows navigation of the railroad route and visualization of elevation alongside narrative written by historian Hilton Obenzinger.</p>
+				<div class="horizontal-flex flex-between">
+					<div class="vertical-flex" style="width: 33%">
+						<img src="https://lh3.googleusercontent.com/tR72WevGbOkftwXRmaTjS7vEoyMMZ5qHPpALtX0QQ70eAjUM1Z1q13-i-FUumNaw349sYNPfWJXnJduDF1J3oh1r81E3PtD1eFK_EGBna_9VkfQkBWAC5uTSRE_lZ-9s4RbreGXLdjLOYsJYrcoDbShcMkPN1BRBbAfxVyiCx4lS6QD0QxU-wgoqugj5jYKNNLiySeAWf-fZ72Ujhr_dgwms356aehI5ARyhtGkwWwUvYtye5Va23WXvEXcKpKAh_EQo1eHMuHICziDkR88CqZw09QVfu315E853oMNcPnQW3fGx3fD-9b_dCIRB99OqlXCGtvhM42iYDiRWLgMxo_snA-ewEnMJ6VVWdU-ewUfSh90_mu7r6Dommz1oHdZjfHVkrAOjGVpkKtjIgbyvWsk9pDqZdJaHCW-iSYffYNIF0lx1noGMn26QzL85IhKDhYeH_ci4h9AOAJX97k8l74AEIbWJPsoSL7SKyeF49Am529eH9JwNq-LZv_QddEAG2JBsK2G_34CPZNeXokBpMFklqExn7b3IhZekDdxKu9Ecmot44bgLSbg6DpEMaKZjLT_LRy4hXt4he99gzz1ZLGpZO2eLpBiqHu5RU_Kz08envZicb0J-JKHLhJVmGq5hG4eOsI8B06P356Ur1CahxlYiz0SbxLyVHazoqCoPZUFcvvBU3mauYm5pdLYDJVCkrdv0T2n93gjVc6lkNZB59VJEMNiDiMNA7xi3lWl5YrtCo1ocO8KE_Iw=w897-h516-no"></img>
+						<h4 class="caption" style="text-align:left">At the project’s start, I prototyped ways to use interactivity to communicate sparse historical weather data. <a href="https://projects.invisionapp.com/d/main#/console/6501654/150573960/preview" style="font-size:12px">View prototype</a> on InVision.</h4>
+					</div>
 
-				<p>Key challenges to this project included creating a design that allowed meaningful visualization given limited data and balancing data-driven visualization with narrative or illustration. The end result is a digital essay published on the project website. </p>
-				<a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/website/virtual/"><h2 class="center">View the Site</h2></a>
+					<div class="vertical-flex" style="width: 33%">
+						<img src="https://lh3.googleusercontent.com/ez36bbTFE_gKzpL59INrS6YZdQTBVxuEcG0QmS2_9JKI958ym6G6p6QDkS1AhFL00jpfnSROzuNNyw5YZ1R1JDOZdH-koCQ98skn1ne3ompDodATyMsw_jHN-xPEDZ4I3eOdGZZuaZQwcbjIoBl1o38lBSF8bp9NlwWqpiS7YQviPpY4SqfNGOVwzpPo5mMvqG5wYNd2FaKKSIsGQnSv5COmNvE0NdqHH0cb-m64ts7jsyL_Sfyze24yd3rY0Y_jmdJsKV7Mf82u5B-ChJLQq5dn7XIi3Y1GSjcGl5keNBXthtqTkXr4Q9R7bxgtmbATN1IB4CLs2vlcl005V0Ps4z91nizNDqspcMaroDvSER4_FHxyZ_zYOzYEiceP6s5JtVJB5YJhGDPUvUjwGPmGFv4qod-8oNeAo7IxctyK3fxEpvJCgQ8fGK4qRmp5r1fXv6T6ZtKIn9Qy4DTHgcbtlXrIUsR1bwq3dXxnvaa4VqkyS4ZMSN2UfLZXj0lBiBRvN3JQuB2SxawnTpiPZdXVgyUXwMVWi-hYncjyeuR3CJIdKAOxE_1o1Xo2q3df7JqcSyG4-MNUWiNDg9HqsIRHIQ0h8o77vaWKQhatL3gzkSishPLIjq9xZDeOFomYGHJtooRrhs3wNHIlBjTkqhao3z9nLYz0mHgSV7EYac9gNXey1PgCra1qTQhtlGq6v_ofYE-sHunyJRjlvq_9egaRFxTbq-8GIWa9oT-DuWkdFP9kp3nYSGhbGNQ=w914-h522-no"></img>
+						<h4 class="caption" style="text-align:left">I also explored geolocation libraries for visualizing data, including d3.js, Mapbox.js, and Leaflet.js. <br> <a href="https://api.mapbox.com/styles/v1/niustephanie/ciyqfk2bo00112rl3uemb92ss.html?title=true&access_token=pk.eyJ1Ijoibml1c3RlcGhhbmllIiwiYSI6ImNpeXFlcnpoZjAwMGoycXMxZjduMzE1bnMifQ.RCOtj8Cmagx4USiz-OW-Ow#6.1/39.621/-118.75" style="font-size:12px">View the Mapbox map.</a></h4>
+					</div>
+
+					<div class="vertical-flex" style="width: 33%">
+						<img src="https://lh3.googleusercontent.com/QAJ4Ct9c8MLWgsMnqH1mKxophQo5Hk682e3K_yKtL-ZFo46z8PumI8fz7CAPvBEouEV5Zw5aCFCBLorX1j4SRzNCjabRyoSL3hDr7t5HrcuXgSakb_ikZv2YZ14nPytAkKD4-3_QltRZruYW6DxonS30LJJxQmQBYI7Mql_qNEXQteQtVVHUF-Mb7k4LyurzlLGONKt33kbOQo7lACwI6uljXGvPqdtXkW5mhLSQpcBxrOBPuzQHckNjeUmd624ShzXszlJrcTPLA5BlCbHq599QxD0L9ZKnQu3U2bTa2nJRxGvlDQrX1irIUHfMLbj3VkfbhbYAXj_LIBIhDzGGHF5S3QBCo05LFrJuAaU7rmsiyriHy_g1kgF9v_qNDZ0LZfaWR6X3ptAXPUsqFm_0b91IDbjPN8i951Ii3Z7bdLuncUxOOUC0YpAA6Kf_gDACHxvpUw9-buK3ZUNDTr5kgM7-8pap9S4DAFX1mPEIt86S3Q6L64P9_5rWZ9yyjMgpTVkm623c5lkhkq_mgCqqAM0anBH4nBb36LkiUpvhF4jM7SAp2TEjjZBi5FOS8U01SwHk_Bywwqk0JBoYYEkhiDMWvzhXIMIBK4tQR3_cnSHZb3vi0mvWEY8jCwriKdNGN1zrpxQWn-fkCAqaVzkdcW9tyWnGtpyzcl_TZ1HPBi-M1oBaMMFVaAgh8KQUlEF4e3kZKuWcE8tC_s2iigYOmLgHo360_M_V92Knd5bxo8rFOdIPRQXJzkU=w1080-h607-no"></img>
+						<h4 class="caption" style="text-align:left">Using Adobe Illustrator and Google Maps, I created map images to illustrate the physicality of the railroad.<br> These digital recreations show the physical drama of the railroad route overlaid onto present-day infrastructure.</h4>
+					</div>
+
+				</div>
+				<hr>
+
+						<h2 class="center">Publication</h2>
+						<p>Geography of Chinese Workers Building the Transcontinental Railroad is an interactive map of the railroad and its key narrative points, incorporating historic essay and photographs with digital recreations of these key locations. An interactive top-map allows navigation of the railroad route and visualization of elevation alongside narrative written by historian Hilton Obenzinger.</p>
+
+						<p>Key challenges to this project included creating a design that allowed meaningful visualization given limited data and balancing data-driven visualization with narrative or illustration. The end result is a digital essay published on the project website. </p>
+						<a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/website/virtual/"><h2 class="center">View the Site</h2></a>
+						<img class="center" src="https://lh3.googleusercontent.com/qQDsPw0NJEgSOMeCQR0srbl_oEMoYPWQVW3G4cWB2fQmRlD4_lLY6K8-Ygo22LWbiiIRUlfydet-peiIJsv8m268qi9GJ17X_Ik-KbtjPVmlmTiV_uvJBsBX-xdth3b9pUuyrWevWzR1g9ko8Pk_FpIBdUeK1MlxPDo0bS5PhrMMTt5H4auMsP8n-QCO1oQcvT46GvWCorSxPn3rnwQ7T63qO675hJFsLvbIKxJAgEYfNIQMXhLIy2jFdD2ss7NT-nAkfyGvixN9sq1fylmoFfmSTRUbOSP1T6AIPssJyQUjH-lTYK-jULRCe82ppcvxevTwB5kXE_Di9SUd5VF2S-SHC9du13nyMf_1028zBDiLd6qrTHsgi8O6e44VAheE7Oy8giDtNCIb0s6zEkbU548dOuydZc0UQOE6a92zKjvnqP8H-N0s7VZFQh1lRTnjysGtN3WPks5CXYafF1I8P8UhO1SQkUx8ehUl2wukzZV0jtSh8HfkFi34ENGTcGdFW0lrwOW5M_Dp7XxUj_DXwKdNAv2hp2bOFus9zfV18Kb1-aWr-p6Tqe9TOKHiPDORVEy5WedpJNESuYBVytXjDzTq7aT1uK5wszx5LwooQ-AEvq7dTIAKTvCM2KMBVrYbGUXjqucLWRfcdwpRri2no1e4DF1JFMNXZmZeeaUG4iqOvGcKdB6N9Zfv-3QNYSzqufRayOJvNcg7F-zBd8wWJjxIkv2LgB_98788OqZ4ZLJIsAIurLz6Rfc=w817-h320-no"></img>
+						<h4 class="caption">An interactive topmap displays location, elevation, and progress along the route as a reader progresses through the essay.</h4>
+
 				<hr>
 				<h2 class="center">Public Recognition</h2>
 				<div class = "horizontal-flex flex-between">
 					<div class="vertical-flex sideimg">
-						<img class="bodyImg" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564520341342-U4IX8WY6IC83SMNWT8A1/ke17ZwdGBToddI8pDm48kA_SSaoz4elkj-HsZd8gX3Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWPwZyNcweDIvdeL5kotwkIXjs9g0WibSO_cU-Ijy4Pwg6poS-6WGGnXqDacZer4yQ/wooster.jpeg?format=750w"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/G1RT11ehOEeSZgoa2sHuGXwywGwHMI78zm6YLYMJ0Uu_tcfrCbr0fcKc8TZOv27-6BNbuaNAwiTOJmmD4H_BRyRIvOrPeQf0WXJJyfiA2OeUKzkGpY_ad1D2q3m658w1oiCOr1vAdj6Jo_9XE9H_53Nv9Q8WiKsaX23RjrpUKlIogwMU1rFDVOFn5ZavyLzaVo4FfPP0ENOMjjL7uPSHRWa10P0sKQ-8Yushyd_S0N8v5uvec_uL5DUH2c4qXGuw2GuWItUHPMvOuApzazVkIq4oDvlcwB74iW0CqYh1URpAktBy0VxFG9fXhqJ0BlO7NugNl523eEGNQt0H35Jp4jK21-hLJIQ11uGOf3znBZk-jE8auGq5EqNF6dVJytsUdqjd58petL7edyYLQxaqhgD-abvUwbMoNbwkVKb84ZGDHeTKgDZGoOtZ46v0JGWm7rzXQlVluZxcFg73t815QDFxqxp16FtPVaLy7WtS889u6QUYrsLM2rG7DbxLgag_lJ4OKTdG480bn71QVS22DflsywOIV8NG-Wn-uUVfDIoWiozypgzhSvRpCgzFtjLEhUt0GiUSGhqFwDfwH69rpVyp55GoOInRFAUcuUwESdY8lHihUOF5Dyr7EkYMxzEMiwVuHdMKATTSE1wkWNAZPHnpHiA3Ow-fcsFROBEJ_qBDvKtjMthuNqNwXz_Je_1PI0XYfPYDVWdXaJroQwufMX6IzhQe3zP2JpLj-880HeGtvjatr9vXogk=w750-h500-no"></img>
 						<h4 class="caption">Presenting at Voices in Digital Humanities 2019</h4>
 					</div>
 				<div class="vertical-flex sidebar">
-					<p>I presented this project at the <a href="https://web.stanford.edu/group/chineserailroad/cgi-bin/website/2019/04/12/150th-anniversary-of-the-golden-spike-event/">150th Anniversary of the Golden Spike</a> commemoration at Stanford University and <a href="http://unrh.org/through-mountain-and-desert/">2019 Voices in Digital Humanities Conference</a> at the College of Wooster. The Chinese Railroad Workers of North America project <a href="https://www.nytimes.com/2019/05/10/books/review/gordon-h-chang-ghosts-of-gold-mountain.html">was</a> <a href="https://www.history.com/news/transcontinental-railroad-chinese-immigrants">widely</a> <a href="https://www.nbcnews.com/news/asian-america/150-years-ago-chinese-railroad-workers-staged-era-s-largest-n774901">recognized</a> for its contributions to history and research for the 150th Anniversary of the completion of the Transcontinental Railroad. </p>
+					<p>I presented this project at the <a href="https://web.stanford.edu/group/chineserailroad/cgi-bin/website/2019/04/12/150th-anniversary-of-the-golden-spike-event/">150th Anniversary of the Golden Spike</a> commemoration at Stanford University and <a href="http://unrh.org/through-mountain-and-desert/">2019 Voices in Digital Humanities Conference</a> at the College of Wooster. </p>
+					<p>The Chinese Railroad Workers of North America project <a href="https://www.nytimes.com/2019/05/10/books/review/gordon-h-chang-ghosts-of-gold-mountain.html">was</a> <a href="https://www.history.com/news/transcontinental-railroad-chinese-immigrants">widely</a> <a href="https://www.nbcnews.com/news/asian-america/150-years-ago-chinese-railroad-workers-staged-era-s-largest-n774901">recognized</a> for its contributions to history and research for the 150th Anniversary of the completion of the Transcontinental Railroad. </p>
+				</div>
+				</div>
+
+			</div>
+			</div>
+			</div>
+
+			<!-- TROLLS START -->
+			<div class="content" id="trolls">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Unmasking the Trolls</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center"> Exploring Russian Interference in the 2016 U.S. Presidential Elections </h3>
+
+				<h2 class="center">Background</h2>
+				<div class = "horizontal-flex flex-between">
+				<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://parkmichelle.github.io/russian-interference/images/iris.png"></img>
+						<h4 class="caption">Full network of mentions between Russian Twitter bots (red) <br> and real accounts (green) from 2014-2017.</h4>
+					</div>
+				<div class="vertical-flex sidebar">
+					<p>Russian Twitter interference in the 2016 U.S. election is a well-documented and frightening phenomenon. While there are <a href="https://www.kaggle.com/vikasg/russian-troll-tweets">rich datasets</a> of Twitter accounts identified as trolls, many questions remain about how the accounts managed to find such success.</p>
+					<p>Our team built a visual explainer that explores what allowed Russian bot accounts to so successfully interfere in the 2016 U.S. election. In our analysis, we also discovered implications that the 2016 interference has on our upcoming 2020 presidential election. </p>
+					<a href="https://parkmichelle.github.io/russian-interference"><h2 class="center">View</h2></a>
+				</div>
+				</div>
+				<hr>
+				<h2 class="center">The Visualizations</h2>
+				<div class="horizontal-flex flex-between">
+					<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/f8WnGdJO3ynntOchO0PAaXy2TaHuRWiSYGbh7tbBDTKCGZ80H1LmQOalaGuq7Lpq20BGn6PmCrx96a8GxsQqmViOYme3BUdfOgyYAf1Vuzg8ioe3PPDMbuCzCpg8OOQw2O1l5miPAMGlBq7Co0MvSFA0MY0BlNco_GbmdJI4M8YLtjLGRvhGBdc_w6lhg5s6Uh2EOPyAFc1NswoT9k6skGhG9-7y72WzzScpjH_ahcdzNGrnoTEd-_6XG-4MRqr48dLmWRqNBW3OMtCFIOSK3dwDAlX9Sl3XjoPBuHNlCt-nPX2M4uvPAER6BVMDT0_IEF3PErr6D5zxIGOfJAmHt3g7zOWCkQQeaTJ9Ud3_KHhU2r-rlp-2sBWqMhzNDxjAo-AxKk5nj8FH6xyzqeSWGI0UN8pmEVgLoX5zYrAPRy1IKX-clrKVVsbVCVHZ5R6HsJilWOUjN58uh4tfDaYH5KgAyaIecOqQ17AfBuF1c-ftfzGWLoOWLkrSu9AN1GIHfuFHnpXrV8BmWDdiDYrNp3zHwPpkdkO6CK706uBra-VgosvnTh4i9ITmjpVcPrsXe1NKdMJuauczAaDK7HZjoGmfYxcWPAHMfnOXUDiJBk9NILSKHVkXIyPJ--sA41m-x_H0DLnbBTnSVOWbdbSUoiXXpjbvq1Ee7joIFf9RiPrJCHDE4VgQL0mMqwrLUYHVnpOX2IHwej0JFah6aZBjehSjAl22n2dGmdCSriC3EZ0WNaL9m7XFmrg=w532-h393-no"></img>
+						<h4 class="caption">Interactive graph of mentions among Russian Twitter bots.</h4>
+					</div>
+					<div class="vertical-flex sidebar">
+					<p>What strategies allowed Russian bot accounts to succeed in interfering in the 2016 U.S. election? We divided our investigation into three areas: language over time, popularity of individual accounts, and relationships between trolls. We created interactive visualizations, including a word cloud over time of top hashtags, a graph of account interactions (troll and non-troll mentions), and a rehydrated feed of two "supertroll" accounts.
+					</p>
+				</div>
+				</div>
+				<hr>
+				<h2 class="center">Results</h2>
+					<div class="horizontal-flex flex-between">
+					<div class="vertical-flex sidebar">
+					<p>Through the process of analysis and visualization, we discovered specific strategies that troll accounts used to find success: establishing themselves as genuinely American through language, impersonating individuals or institutions to establish authenticity, and relying on amplification from other trolls in their network. We’ve not only discovered the extent of the 2016 attack but also learned that the attack is still ongoing. The suspended accounts in our dataset continued to tweet into 2017. With the 2020 election coming up, we plan to continue sharing our visual explainer publicly to share our findings with a broader audience.
+					</p>
+					<a href="https://parkmichelle.github.io/russian-interference/"><h2 class="center">Read the Article</h2></a>
+					</div>
+					<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/BX7aqoivsXQx15DOq2G8GEyjzdB-Gtz53dswJ8xM_HTgnkjiJpUnZ63rBZnqUyMmIhdhVGg-MywJ5fYTpyYQHUE5UW3LLiwiWLCJQkPcc7KnDr_-rtymMVc8vEQeD5zcoYDj_ye4ECX6ndTQ9zBY9tnMGEkO9ELnNiwQti35cogL0rJzwgvPBZUP1sg3lPj_yISfv0vKtFF3uThz9KtaGNITierHh2RuXmYkCCZLVuc4o38rrmW1Bsa8bDEnbjOugmU2OvixiQbtTbF2xzdyY7tMKDJg6Y0riBTjyINMMgZNjtnc4fkLByxgXVCwqCF-YraIw4CnYbVVjNxW_dqDiWkO-YeEeLTmZ2f-flGlheedu2kCzIACHfOuhMgcLThYREdwe-N_OIXolOTcjdfGkhGKTXp0ebhY51M-BPzzW43MpRVdZG_8rknpweQtqBWKSoty4OirtprGQV5DJarKeMCZ8anDFNXPUg824-0EaZIeTypGYHW3_ZeANrBaTHIK3LUa8lmdT6W4VilXWpliEMFiQsSXX_Tp5EEfU-iO3jZzVW0NvwyOeo4Z4QtfRXB3dSsmcFDZKVQhBeaszsCPJyPtLKmaeba3WBJuzxoS_uWrZncEv560s7qJYxykyfrGrkkOgotqmTgvtO9FFCOdBC7GfsCrIrM-qyJzRxYr0WRR6V5KcAZWWobgwQl60r6Z9VXJXB4WTSx_kfEgByLXiHVUo9eA3tzfIPXxa9vl2uqhJbc6slXTFAc=w600-h592-no"></img>
+						<h4 class="caption">Rehydrated tweets of deleted troll account @ten_gop.<br> Ineractive timeseries above shows number of posts per day.</h4>
 				</div>
 				</div>
 
@@ -93,7 +169,7 @@
 				<h2 class="center">Background</h2>
 				<div class = "horizontal-flex flex-between">
 					<div class="sidebar" >
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAxy8EVDB27eY4Z8Z_p9sgGCUv7CbCFDVaf-A4j9tOioNNUTBLJcCgoZsTMJE-omHCJM_o6jR6RSj33ibrdNdZ2wRmkJrFjJJoWtpdCmieA2JUnByY2VV2__Xe8B1cE2mrrP-cFfsfeoB5ybHpJKrfGJ-y9f47Yt63TNs-rSEDl5k0wBytwv_fqY0EUnUgmcZeXTJ7K1806mJ-0V3jYIiMOIr8gfcNIT4G9AfxCi3NB4Gw3F9Ogbu24kuuDxL5TEL9yO90ZXQm92HepyqSxfSh1GDOZaobbHL-4SL3_rMjNs6kUhggmTMUuWu2CZxJdGepZ5lNR0axGs7xXHk6c40VBKLZ7S47Vj_bKFwD1_lm_i6w/p.jpeg?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/VDBz2EVqRkc_TJYxkfMQ92qgZ0qZuL1QAnCAtkqc_oPuv2L-L_d0Vzep1eEz7TruNHi9LSvOk9li0faQjtIk0bE0rn0aTfxn0nKE_mVa-yvYIyr5ClEXox6K3-ghFZFYCtrlZPdPlK5bwoMxFPnzJrBtnkdWNFkqupc_fqqT8e_cxp0Y8GGHyZGREVao86TzYu_pswyfmxrVAR2emYHT_TJNhlSFbSV51AD1JBa356yXZwgzMd7SUZmOtdzLFNZlAYnYjp-nILWp5it1uiZOoIvEYQL5cOuVhWJrpPUyM6hSNYO9COPId2aWUk5H9KtO2mC8AjRIAXzD-hBIJfQ4wg82mVLF0wRa1_NPQ0kD0o1iKbchscN9Gc5wYaNcKQCW-yqIeTGEl3DiXzUdZJBoMpjmUIoefmA1LP6OFNR9hREL0rN_8vlG7f8TTQVAfEU7-Rqwrvn58eZlNVVgAu0DjcmEeRBoLK94Ff7529BFZXrM7O77f1Lv5jKNitbRaxiejJwYSfxykav0QQOIE5wgyCV_19fYuhYvjFgkJ_MmFUGNCZOAjW2vr_S7wt16VqFBxQeEXcCK-IJRqyRJ924qMenA7BYDDnnMzkxhBq9-DjDrtmj5FSGWhjK7-5M2w-SjtZWopCO7xt31aipL9QU8aWyWG3NItWslaU4r2xfCR65o5jj75PBX0xB1O7pG1oWGbFHdhdTI0GcGKgnTXF5PGr1BxevfwPvQpjKUdhbQBOyGfq_LeGa73W4=w571-h713-no"></img>
 				<h4>Watching crabs cross a custom-built bridge during the migration.</h4>
 				</div>
 
@@ -101,17 +177,21 @@
 					<p>Christmas Island is a tiny rock in the Indian Ocean, hundreds of miles from the nearest land. Despite its physical isolation, the island is a microcosm of intersecting migrations. Every wet season, millions of endemic red crabs descend from the jungles to the coast in the Christmas Island <a href="https://www.youtube.com/watch?v=036-38HfeXY">red crab migration.</a> The island is crisscrossed with a network of manmade tunnels, bridges, and fences to get these crabs to their destination safely. At the same time, the island holds one of Australia’s largest immigration detention centers, built and run like a prison for boat-bound asylum seekers hoping to enter Australia’s borders.</p>
 					<p>This project uses narrative interview to investigate the way that these two migrations, animal and human, are treated differently.</p>
 				</div>
-
+				</div>
+				<hr>
+				<h2 class="center">A Research Journey</h2>
+				<div class="horizontal-flex flex-between">
 				<div class="vertical-flex sideimg"> 
-					<h2 class="center">A Research Journey</h2>
 					<p>In October 2018, I traveled to Christmas Island for 2 months to conduct interviews with islanders, asylum seekers, and immigration activists and tell the story of these intersection migrations. This journey is documented through a personal blog, <a href="https://shoreboundjourney.wordpress.com/">Shorebound.</a></p>
-					<p>My final product, an audio podcast, was presented at <a href="https://digital-frontiers.org/df2019/">Digital Frontiers 2019</a>. You can listen to the podcast, <a href="https://anchor.fm/followingthewater">Following the Water</a>, anywhere you get your podcasts. This project has been presented at several conferences including Stanford’s <em>April Symposium of Research and Public Service</em>, and <em>The Gallery</em>, a student-run art exhibit.</p></div>
-
+					<p>My final product, an audio podcast, was presented at <a href="https://digital-frontiers.org/df2019/">Digital Frontiers 2019</a>. You can listen to the podcast, <a href="https://anchor.fm/followingthewater">Following the Water</a>, anywhere you get your podcasts. This project has been presented at several conferences including Stanford’s <em>April Symposium of Research and Public Service</em>, and <em>The Gallery</em>, a student-run art exhibit.</p>
+				</div>
 				<div class="vertical-flex sidebar">
-					<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAy_x7niqVgbvyLc0y4Q2BaZ0sCG186cmdyg2ABISt_J3JiUnVaTGEscBRm-bK_rOWuV-n6k2rceWQqkoXd8s2xE1X5VIBvT-r132ffUyzf1I9yQWwxFUhkJjPEhTO4KX_-_79gH6bc34FLP4BWbvMA0XhfBuHxv-fWumF4OlQZ8gmBy7eYErcG2wbUU8BEqQt1NROOJRfoXnOVQbYPFX3sD3EwrVEzTkmZSsqQ9KKwthO5dcxn1iQajRLFQFTZBXuAsOdYwmAW-SOvW_00rn6IDCv_mkZphU2_5aIk0-9jvsh5I80-6Gsdz0CmUiV4CR7jM_w6zlfWzA4RZ0vwgeEPeDwWc-bOOEwxHMLH5XQi1mw/p.jpeg?fv_content=true&size_mode=5"></img>
+					<img class="bodyImg" src="https://lh3.googleusercontent.com/_v3GNvz-_V9grNd7Or55YQK4QBZ85iLhOOqiwc4RRkDoz25Sr2jbkzKdM2OmFXCabbDizwA5onvRjr5F4kfZ-cS8504FAJmRmVcr3r-EbO60PfTH9Geh3wSYT7AmVO1BwwCOZvKFGRIbPRwbkOL56Yk5bZHJm4JWDQt4wwFrcxg2n_IrXP5AJYHGb18hJS56M96gq8ZFgfB1CVYjKaid5F8yCITZiFhzXJSPWUiMGf-accgbBAMGRrY1fOxnl4Qq9H2vEQ_H2EhYDaWQI9Zl04tQD7gwg67B8yz3tnLGPaUFBSy3wjBXPuaofDyffnS_oM_zhubkebNSSIt227Nei6ZJPwHvpk5QoITvPtintfyzyiPHWfsfAoHb44bpsHQxiJtz-CmXMv8f9BZ9bBz-HKuSUBiYQIQxR-C7OJhOq2bdIY3kBitnZObFHLRMfqYJeqdjgx1b1QBACZ4Z6yL4KsI--bFlyt3e1fAmRZ2S-klgPz3Efia91bIYQyLciYmhueC25ssqJiEuLQ7mJKwoxEisao7VJd_WX3UJydlrBiS6kHrA4gTotit5ZaphinyafmAqYlEigj0QFNi2EDaFGaogIc3n9SqzywSUjoroZYdLI-wjyruyGoWjJ8jS6tl01Omwagt8aerfujUCM8zKdiz7KEG7rI_l74LNyJhyV6qskBtArDhKp8VcmHqzij0d-ct9rjSGZo5W_4MjGhYTvz6qcc0iZHSJqAlpouhrfnd2M6mtoWth_uM=w500-h456-no"></img>
 					<h4 class="caption">A cliffside interview</h4>
 				</div>
+				</div>
 
+				<div class="horizontal-flex flex-between">
 				<div class="vertical-flex sideimg"> 
 					<a href="https://anchor.fm/followingthewater"><h2 class="center">Listen to the Podcast</h2></a>
 					<a href="https://shoreboundjourney.wordpress.com/"><h2 class="center">Read The Blog</h2></a>
@@ -142,43 +222,83 @@
 				<h2 class="center">Background</h2>
 				<div class = "horizontal-flex flex-between">
 					<div class="vertical-flex sideimg">
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAy4dNLctF7xZR0U2NEvvXlSdCsNOS7c8PnKltiHz_1OzZ_HcLfskfpAexoGivHazp0hAjdWBM16r_esU1_6fxZ0E9p8Q1qMrA-C9AoqAlA-eBRhVI7IQu5YkCdf2qL2-NwkGn47PSZR8sTuUSjiY-sT5ocuCZrBoaa5JxdRKYANBpH4ic1259nWfLfqLiAt95RvACy0yJlvpCe_xcp7DXyu6b3X9-UJ_nMY_G_EqaxjnZ_Zpn_7Tet2zMrpeRyO7eSmxQdqBg9to_YNOAfJzo_aaDaUZJpNQAWYbAPb6sdP68ZmTuQ7svrTmHH5uUctPz8sStINRL3a0ZTccHlfekauzpQFYA1RO3YLuEmx3nvD0A/p.png?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/3F8Mp8frKntVCpfzA4GMOHHUrdwtYEAY24SwTFKhoW2-JaUUdH9R55Nfl0aVNuYTzfhTS_G5wyvhYvb8JaO8RPI4Ay35EiXqO8DyAqA-GCKnQ32uLelI4TG5-o5poUogxmz3ubAPSoPHsOHNlEK-ku-kJwP74pdGpO-VnhlJpT615MG1XbbxOX19PrIyFnNZkw8i1C-34yeMXZFVOAz5lX1C0m11yxedusTNrb3eltaTgcHV8eUmR8H6QIjOkcZK-i-WUpsaZO-cu2YkG24atUvnrYwROcjIenw-AmiKrMccfzbHV7FFvjWeW2uvREA16HLdDZpAHxdXhrWVRdP2UjWtdqunYXB-11sl9v2CKPiCq3FfpIlmNVfxHXiVt4auQnwO3fvMeExK7wX53IAnhxtDzvyd4cefUQwk-FhE-HgHH7linZCgEziBW3kma1tiZ0MIQWaNaL8vea-fs_yb5c7MDmSd26Y4Y6BT60B9B2wVsY1HjyXmX6kre54B_MUBMgXsp6gFx2zwgRMP4xK8ucY05CWXMPmEzC9dS5FxANUUt01pA6XMSMrxUrPvM8QAJ95o2aVnI_eLYVvunFZCd54MEEv4HDQ09W7WlRTMtTsOStI1_9in_NL1Wre0thbsUzCKiaz_r_LANQlVDKq3Ht0HRCR4JSopzTTRc3Ky-pD20EY2sCfQWmEmfyGsenJuTE6EB0lyfbNsbySKc3U2P8ylI6KZ3SWtOTJbKF3MhJcGxZqqejI9hL0=w863-h529-no"></img>
 						<h4 class="caption">Chinese and Anglo-American artifacts from 2017 excavations.</h4>
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAwK1KoC0A-pvGRRN8dipwEpKTbe1TVdwKHAjcZVrORTp7Ba6vKFQjWB8wj0WgATcZ-M2bTG23XKO49kVczk-LMLGrBMygUKeR_rtQg0m8Z_9anH_UlTMOgW9ZzC9Do05VxUxDv-VKLPuERNs9xGknInzvwLRKWTAbb4ra4BTJVHavJNqldiLpUd9rhbN_nT0XAJNaB_5gJpiaIUyxRe_jqi_vl29XxOYicGBqWOmI2jatwl7YryvExI9Tj6V1wqOcyuCbpUh4DGh4ZXS7VRLj4x9RF6qQK4-qU-dkWTtTS9wrrydW-_MoO6GGRvOydCxflIC3b2gUom0Ar_uUb4PpV-7k2IO2AsUuWewEf81zq1KA/p.png?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/l3ykey1YBl5avOZjh61be2k_nhEK1bjz5T-QDMX9TYSnUcxGtoQJETSbpi6AuuDTQ1ZaK7hAwDdf9bYTv-5sAPyRfAxQQGy3WV2HJbi3-vSQR4fv15Cn9_EctjI_A1KVxAQWnSCU9v6Ho-UH1LB5xGfPmHIgQ1tk--yDwYslKAN_7JgEnO1DcFGfcslUIfhv_JFAny5SV_idxvOVpy40B9-LenAUaxLyfCqYsNSsRZuHO1Sp-Zn5R7DpsVGb6AdL28lwh-07R816dPCUqBf_czbJx_Wn2epKTj-i8yO1NTdpKDtNGl7TE1EB27ksysEtgjNoiUaruAnA0PU8qxrllr2J7S00oOJ3sTy8lchLCPalUDYedXqbGWvQYecKqp5eeySgRe5yFbjV71C54bGQktRiIj2hPheYn-pAQEc19EUIkahMkGIaktULw_aGKo_m9cFyM7zrpK_9R1gHSvH3SslbI-qIImaLQIwOEfRuLa0P7rdybpQqKU-c7ho6HOcmeRHqM9jRM5cQce1zOIYxN82WPnVnncTLGjI1wR4Hkrlv9_5dagi7r6eIxHFiey2ea6Hivtrc1Iz1LfqMpv1mubRZvfwuGmZBE6cvj0nTmKkPkUxT9e4ASC6t1bk_xDFYthIPFLou4VkwZUmknnMsBHp48gPnDbL1DxCPLBxWdFCU8qMJOwJpgZ224fpgHm4jzgPWG310LeQAVnNiLPejjRHhh7AsyH0LNr1AJGMSJlE9BHygZ_E608U=w423-h512-no"></img>
 						<h4 class="caption">Stoneware canning lid fragment, one of the <br>objects analyzed in the project.</h4>
 					</div>
 				<div class="vertical-flex sidebar">
 					<p>In 1879, prominent senator <a href="https://archive.org/stream/lifeworkofjamesg00ridp/lifeworkofjamesg00ridp_djvu.txt">James G. Blaine</a> said, “You cannot work a man who must have beef and bread, and would prefer beef, alongside a man who can live on rice.” This statement captured the anti-Chinese sentiment prevalent in late-19th-century California, which fixated on the otherness of Chinese cuisine as a reason for viewing Chinese laborers as less-than-human. In archaeology, this legacy has been historically reflected in the study of ceramic food vessels and other Chinese artifacts that “seem to fascinate the archaeologist” with their <a href="https://web.sonoma.edu/asc/publications/sac_hi56/overseas_chinese_01.pdf">“sense of ‘otherness.’”</a></p>
 
 					 <p>However, this narrative of Chinese food separating the Chinese as inhuman and un-American is incomplete. Even before the era of the Chinese Exclusion Act, Chinese laborers in California were purchasing and consuming American foods, if not out of preference, at least out of necessity. Artifacts from the Arboretum Chinese Labor Quarters <a href="https://archaeology.stanford.edu/researchfaculty-projects/arboretum-chinese-labor-quarters-project">(ACLQ)</a> in Stanford, California offer a glimpse into the culinary lives of these laborers and what they were really eating. “Beef, Bread, and Rice” combines object study with visual illustrations to reimagine a more complex history: one where Chinese immigrants curated a diet that allowed familiar Chinese foods and new American flavors to coexist.</p>
+
+					 <p>The project was scheduled to be presented at the <a href="https://archaeology.stanford.edu/tag2020">TAG 2020</a>, the annual Theoretical Arcaheology Group Conference; unfortunately, the conference was cancelled due to the COVID-19 pandemic. However, the illustrations created for this project are published below.</p>
 				</div>
 				</div>
 				<hr>
 				<h2 class="center">An Art-Archaeology Collaboration</h2>
-				<div class = "horizontal-flex flex-between">
-					<div class="vertical-flex sidebar">
-						<p>"Beef, Bread, and Rice" is an essay and art collaboration. The project is the culmination of a period of excavation in the field at the ACLQ, selecting and photographing artifacts, creating digital illustrations, and collaborating with local artist Cathy Yang. The project focuses on four artifacts excavated at the Arboretum Chinese Labor Quarters (ACLQ) and their implications for the cross-cultural nature of Chinese laborer diets. Cathy Yang created original illustrations of traditional Chinese food vessels alongside western food vessels, depicting original artifacts from the site. The project also includes original digital illustrations I created that document duplicates of two of the four artifacts found across various resale sites online (below).</p>
-						<p>The project was scheduled to be presented at the <a href="https://archaeology.stanford.edu/tag2020">TAG 2020</a>, the annual Theoretical Arcaheology Group Conference; unfortunately, the conference was cancelled due to the COVID-19 pandemic. </p>
-					</div>
-				<div class="vertical-flex sideimg">
+				<div class = "vertical-flex">
+					<p>"Beef, Bread, and Rice" is an essay and art collaboration. The project is the culmination of a period of excavation in the field at the ACLQ, selecting and photographing artifacts, creating digital illustrations, and collaborating with local artist <a href="https://imcathy.com/">Cathy Yang</a>. The project focuses on four artifacts excavated at the Arboretum Chinese Labor Quarters (ACLQ) and their implications for the cross-cultural nature of Chinese laborer diets.</p>
 
-					<img class="bodyImg" src="https://archaeology.stanford.edu/sites/archaeology/files/styles/responsive_large/public/media/image/TAG%20logo%20Final%20v2.1.png?itok=kvneegbJ"></img>
-					<h4 class="caption">Poster for TAG 2020, where the project was scheduled to be presented</h4>
-				</div>
+					<p>Cathy Yang created original illustrations of traditional Chinese food vessels alongside western food vessels, depicting original artifacts from the site. These images were created to spark a reimagination of laborer diets, one that integrates food traditions from Chinese and American culture. These illustrations imagine the objects uncovered in the ACLQ in their everyday forms: holding food, with Chinese and western flavors coexisting. They achieve the same goal that historical archaeology of Chinese laborers in California aims towards: to more fully and richly imagine the lives of people past. Her original illustrations are below.</p>
+
+					<h2 class="center">“Piece 1”, Cathy Yang</h2>
+					<h3 class="center" style="font-size: 17">Featuring Heinz ketchup bottle, pickle fork, rice bowl, and Chinese brown-glazed liquor jug</h3>
+					<img class="bodyImg" src="https://lh3.googleusercontent.com/4ZNqfyFUdREC2OOXHVxeJNrAz-L3uBZgdHQoXRXTDlsuXXMmBh4E0XmdHn9MYeMs4q3Y_D_P1oqa9F7jMcyCCVeNdax4PdUIe0AQAxR714q1tgXcRk5dvzAceTXcLMapenLXiwLD6C-jfPJJO0qI7MIZg35jlxLvcwbjIctu31ABK4cSiP1DU66PL9InS3rWN_gGwcZTcc8swuDS8LQIrI2mZHNo49lTSHRAmc8ERlO5fhaMB3bch1aX_t4jo-FGexEJ7dE0e-LcfY_qo6QUJom41G3oZ0V9PKWB-q-a1Z3XA7BRXLMDwEnZVWXTThba0VMxAzhVViK9H6Dv530VsAnapPr-8uxTDgxueMNEyQv-mZ2SSkSOiMc-2ak4uP3LzFFh78hx6GhDyioHk9Gir0F79it34xjsJm6k6hVjn26xDchcej91rI9vxn-519j2b22n0zK88uehYp0OGoFVPRumGIpFXKAiuhwHDxbJnPq3j66R950hpEjcgN42NjajxIpT7PyBDMlMkMLtBiavz97J_mPoVwDHtXoN48McTXKkLaBfWDvW6HE10uC9y-h3M_W3YWRgooU_65MjhoAiidxJrDWxF0_a4c-TkbMXuH3FRaa57BvCsSln6D8ZELclS9aaTDJPptKFeSZYvurwSmgzp_XfzohKX1erFMRRQfbRvMeb3nNr7iIj6usN2iLMr6FVzktqPGwbhpHpbAO5D7jM_HepxyvU1BZknzyILzHYl-5rKI91zYE=w975-h700-no"></img>
+
+					<p></p>
+					<h2 class="center">“Piece 2", Cathy Yang</h2>
+					<h3 class="center" style="font-size: 17">Featuring yellowware, bourbon bottle, wintergreen teacup, and teapot</h3>
+					<img class="bodyImg" src="https://lh3.googleusercontent.com/KIijVqz9DeqvCM5454-TE5o52eDDpq_iNmrohKZwlB83kqpSPDKiwtXJ59E9w984grYPzdqw__7UF_ePVbcJgYno_rXBAaw7qG2leCGuXczBfa4EYarvKwo5ZvCQKFiWWbXkAWrsGeQ2e4J9kuBJZanbTyeICyzHKtPyzdJyOB8PFrzindCr-E2p2tBBx7iZDHhDJ8jJ5U5L_tyrJKavhMKIDRjqO9dQzuZUA5Ap-ahzOZp8mDPu69EPfKvbvaQALfcetzamytqH0UBl2fpsBNs_7cEw4vp7mv9iYrRSQTkZEAKJKwa-1DOxDgDdfMNICwgN_c13BJIgSNBsVor8XfjSebdpmNJP47IsRnzh7WrXu_iaxPK7V0sKXrYkuUttyoyfXmocqdRb_wBUAtmV9xBbWmUZkJexAHKbh_8khk6Q0Av5evHzA9Zmkdo7uPdI6G9aNlJo17qOIoSc-lbqDyNKtd-qxC_ksNU_ep4kaFyGY1QVolxIB3UhhTtk_5hANqgZzr8eikP-n-JOAA_e1jGe6dDJHKenoEeQeKJOcbYSr-6Z7H-FMY_ASgRaIVuI1TygH3sUV4Za_qrP3RtExcqfgdRa2hOFG0a9ktQq3UirHBujB3m8B3vQzTQOUaShER1UgNwlGLui4oTZ7uccUuLUq73bD_JCyT-mxVDipjQeyAKP3mtQ-7rqrpJ4TB8XRNl2AxQ8lv0yGq90ZycaqGa1n00M4EIz5VbRwnyzz3JQPBtBc4CRYcE=w975-h678-no"></img>
+					<p> To see more of Cathy's work, visit her <a href="https://imcathy.com/">website.</a></p>
 				</div>
 				<hr>
-				<div class="vertical-flex">
-					<h2 class="center">“16 Resold Weir Jars”</h2>
-					<h3 class="center">Collection of Weir jars from various resale sites, 2019</h3>
-					<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAyfZSqANhqUhDsa5Px3xWmJV1zEZY-w2AEZvM1PpCGFAjHJLJ2IyM3NQVwaasW_zlLqRtegLmSGmdOY_0YBUmru9MSyePbiDn1jGgSXrr5SyH2eDdeN0-OeGam5FVz3Gd9-SrEXsmyH_LlcFQQ8TF4XDQyqwJfGZelfr1F83HXXJALq5goLu0kZ1yamBW3wZRSdI7IYPNntS-8hSX9DQrDT9oSwjoS_E2NK7gReFpoKEAnZcUabiNgxHRugNoCU7i5XEdB0fZQBo6ynBucMbZaeedM0rEsBppoIOfev1zMMvtlLc15n8-PY1liiBKhFlyoNYX237cMUGW12hxCk9Yrol0R48balVPaRLtj1QDYLmw/p.png?fv_content=true&size_mode=5"></img>
-					<p></p>
-
-					<h2 class="center">“8 Vintage Pickle Forks”</h2>
-					<h3 class="center" style="font-size: 17">Collection of identical Reiss & Brady pickle forks from various resale sites, 2019</h3>
-					<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAwbDm6WX9baTLp4nTFhoC7AM233ehnMYox0CNDtxLUj7XylNLqGcVGrbkxALY-AqqmtzRcCzp3seCESThITjalwJlmC5qiiPd-GjODVLFVHL2bOkUTtVRI3MgW5yknoAiNk5ksvuG14rjIeSF9Yf-OPG5P9-dYnafzBMXXbrTz8oBunplwMfjUNgSuiTvRGXuzuZC2oASRdiL2B9gxglCJBGfrvpHE1nFQrsT2dU1qjR7xG8WchzgL38VJVxdHndTugz_cpQcL9KearYg1UT5MCQ3iVT_Ms9HkddR6-iwxKOn7GnbCNgMhaXNjSFjbcPlHOWW7SPQY4MLEDSOaVq0oG/p.png?fv_content=true&size_mode=5"></img>
-
+			
+					<p>I also created original digital illustrations for the project which document duplicates of two of the four artifacts found across various resale sites online. While excavating these objects on-site at the ACLQ lends the objects a sense of intimacy and familiarity, encountering the same artifacts like the pickle fork and Weir canning lid sold across several "antique" resale sites provides a reminder of the artifacts' existence in a wider context and reflects on the role commercialization plays in turning artifacts into objects. </p>
+				
+				<div class="horizontal-flex flex-between">
+					<div class="vertical-flex" style="width:50%">
+						<h2 class="center">“16 Resold Weir Jars”</h2>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/1qBXvDaIMh3eOJ_Zqz94J7N96jOn_EoFn73fqhYqECbYwYOeuRkJJ20cq5EuvQq47BOSKkduuVHrZ-5HVeCymBFj9naUWkh0OPCEUOlgoQT7EQN87yaE2eqtabhX3yAi13CTvnc-4EzTXyqxY2LGixAxRzb6nyWR21ARWmEy9S1Bs7v7flT6xrFAWE4V0cnWOAteV0BGXP25WNJLyzmqTH1bLXUdyRlSzZkS9h6EdC5cQtiaQRm12sNhH4hsSpAe_peBp3NcCNT0PIwCiIutW_tNNXeLkPlz6q2sN7TI1IqhCcEORt7mkYLJA79MAfwgoDUlTZPmhCwn55momOficFVap1kZFGCh3sz3CAme9ANCldEqTplUJ_XOzRZk7YjL3dRLBt963CmnsUDKqOFFauVJnAsUUBJgD8rzBcDnCM-PYT4nnwaJStBQaL9Z14KCIWtNJyJT4DlMdjFEUKYn73k1fQiCMuQwuxUfNWd0KONPXXXWiNVsKuc8IRauBrhYrbHdkgEmL93CyQ1OdLELcgcecQ9g62DUU2RsialU1n1nptC3946t6K80w2vozF5z02VXoN24YOvdO1NHAhzctUOHHrkDCXnaDkq6eLEgqb6jU_PaCDw3TW520azT8TzJovsFJNOGqbmq8NI9DThs4KUFmdKpKwl8ef9_QGonFlELpKNuOcfsqTClXxPVhLoxoPQl-S8YPHjTVXucAx44zLSH3Q8FgKMeqcA4CSV_-H808zp9uLhBhz0=w398-h286-no"></img>
+						<h4 class="caption">Collection of Weir jars from various resale sites</h4>
+					</div>
+					
+					<div class="vertical-flex" style="width:50%">
+						<h2 class="center">“8 Vintage Pickle Forks”</h2>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/QQ1amBy3GJNEOGjvY-qtAWiZU7FInO58gKZNcPtxQygQnc90s77Ckt76Azuu1Q4RGn-nr9hBORkIo4vwCWM9RSe-7pYbuTWZZBe_T7KxDeVovbSMHyNOeazwOp11ojqPjNgBfG-LIv_t7b3W-ZBLVaGu2aOTxE7m4uqADtjBBjbODt1IFLxKU4nZLbp8WKdzGR-CqaH_-UZrR-gVC8pCla1JMgaYZOTw_j3oYw2X3Mid2cROo6iAw6wHJk_p00wJO-5LjQovbXj3k6fwOO1sPI1NhoYIsIYSN-jEQVwNztLZGjlfXrrMrVN1Pq1qMaVjZp3qncOEg7QJHgQ9UADlr8hxwe2YJxpybmWkOCI8kVyqMta6AQEuz4U57A_LmTQIu-qbX9R6ONYFChSTIwaxQWEBlmNtn94qX0mL58wkacmD8WAPYdXKqV7Sa36QPbIzzYuVzwFBz2DWbWtSlklSLCxJ0oX2o1aajONXSCJ5etYxzxpeVP-MmMyVm-Ao_HviD-wV4U5jTAaudAYJ1nTnDHO1s2x1ZQiGkBxCydFBy4SYC8RQCEurv4k5bCOTRkBWEY02iiqfrVL6zgHZ6FfXVcm3ta1BuSuBePcjDW-mwGZIEU-bQVAMl0H508ll096yuA91bhxIoaRSEJY5SAIsz5b3mk8CeUvPpChUqQySqEPKbg4DoJvElOdM4xeTcfnaDQ0mZWB9DOPtSiPnQMBWzmM-oxHM1YhBJTB8n3ix-JMBaUrBuoLebUw=w992-h713-no"></img>
+						<h4 class="caption">Collection of identical Reiss & Brady pickle forks from various resale sites</h3>
+					</div>
 				</div>
+				
+			</div>
+			</div>
+			</div>
 
+			<!-- BPP START -->
+			<div class="content" id="bpp">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Panther Power</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center"> Understanding Spatial Organization of <br> the Black Panther Party's Power in the Bay Area </h3>
+
+				<h2 class="center">Background</h2>
+				<div class = "horizontal-flex flex-between">
+					<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://images.squarespace-cdn.com/content/v1/599a6cb3914e6bf5dabaa18e/1564519128192-5895DO6VNRN4K7CCU1E6/ke17ZwdGBToddI8pDm48kNPF6JdBdcbUF4SBVYF4tjkUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKchl4ZSWSKkOn6ewqTZV9xiUzyIio8GETD-1ydPUJFETQrK0tq5xzj4gni2cgjv5kT/header.jpg?format=750w"></img>
+						<h4 class="caption">From the Chinese Railroad Workers project website</h4>
+					</div>
+				<div class="vertical-flex sidebar">
+					<p>Between 1864 and 1869, thousands of Chinese migrants toiled at a grueling pace and in perilous working conditions to help construct America’s first Transcontinental Railroad. The <a href="https://web.stanford.edu/group/chineserailroad/cgi-bin/website/">Chinese Railroad Workers in North America Project</a> seeks to give a voice to the Chinese migrants whose labor on the Transcontinental Railroad helped to shape the physical and social landscape of the American West.</p>
+					<p class="attribution">- From the project website</p>
+					<p> The Chinese Railroad Workers in North America Project is a landmark example of the power of research and visualization in unearthing previously untold histories. The history of the Chinese laborers who toiled for the railroad that connected America’s coasts was almost completely unwritten before this project. Relying on archaeological findings, oral histories of railroad worker descendants, and innovative visualization techniques, the project has created the first definitive history of the Chinese railroad workers that tells the story from their perspective. </p>
+				</div>
+				</div>
+				<a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/website/virtual/"><h2 class="center">View the Site</h2></a>
 
 			</div>
 			</div>
@@ -201,7 +321,7 @@
 						<p> Preview the tour by scrolling through to the right. If you are on a mobile device, click below to experience the tour.</p>
 						<a href="https://niustephanie.github.io/walkingtour/"><h2 class="center">Take the Tour</h2></a>
 						<p></p>
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAxfWOaoEUQgXc78ffw55PTfBiueeVy79msaEOKuxSQXggWChQdUHB9UXfWekTtzr3vqwEiQhE8KNU9bE37M84edCc5PHweyQ7WbA3v5pDx9tw9s9yyvff5zS_gGrnY6zzr3GnaR9Y_AjtMPL22RNvoHpG9Jmil8YZ6yCJISRUy-gi54xx2CnzE4WmttTiibTgedqaWufD88uDBDvNwVsz-mNJugPb45yQsXdjmiiQAF-dee0A4YYNbLgSfb47XiHNSbhB9OYVT2gnH4LOSPt7y_LY5rY7-Kw9Qaw576eHCDFc2SagSVQ1ysfFpFwmHLgVw3t5BL7WyDspSpqL0jxcVWKWFq2oYPJfd0HGNHoRvY5g/p.jpeg?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/dC4WxMGL1wTR71xKABNkxJvVOPlTEOiURTQHg9iNTJ5fsh9am0ZyZDKrCxT8Hqi6jJ_XdHlhqji2k5AqsN9aEyx7aVECmm17h560iBSlDADL222HCN5tfQGaqcQrg125U2YnIaUwRfUfB6T9kqurOePbhrb60DYww3eBSFsm_7SxVtqIZMIIkR9hFzW8VoLVxXv5e-4NOPYT-TQKW5cqB2E_zEqk9S26g8UUd95zDPNjUF5zLmkJnSlbk9STjmXQyYspLGtlvKZw0jia6Bbb9mYrTkcHHpmEUzLEHXtUntph1bwc4nBKA3hOcQx11DbtolE9k3FcD-YfE7u-ZBwkXsxG-xYhgB4kfmbWU0Tv61Y36vbzCoNWUj8qyYEit87cphhD_QBCQQzerQNHwfSFQcaLZ2p9RQ3dO3sh3HK_bzqaFFPI8IOhIH1AvSpXc_tCk6Qb_nVIBZ5IRZPN-fXG38-MU85SFJKawcm24jzFSg-gFWoLFAj0_j5plDIfNf5iIs-tYdIH7-gGwGxPOZ6EyIcHNJa_8LDb5JkkYCIgT28Jc_Wykh2xuFtTxd4VzBSF6eckETzISkczMsgioKGNcePmUz3y_GBpE-jiAu3n5Z3jj7Fka5uY5xUrkTNFM-A4qz1JpZp33th-p09R5SliP5ti6BbRLFvkriJTviSjxaF6_zh5g9O8KVkm2AtPg-cg6umx2pXps925GYtNmNh_4ty-TxNDaqSpS-PWqR3O0GWpGzKvJ-QKnys=w497-h713-no"></img>
 						<h4 class="caption">Preview of augmented reality feature: Munsell soil chart overlaid on “reality” as seen through phone camera.</h4>
 					</div>
 				<div class="vertical-flex sideimg">
@@ -231,16 +351,34 @@
 						<h4 class="caption">The Children's Discovery Museum of San Jose</h4>
 					</div>
 				<div class="vertical-flex sidebar">
-					<p>“Streets of the World” is a signature exhibit in the <a href="https://www.cdm.org/">San Jose Children’s Discovery Museum</a>. Designed for children aged 0-10, the exhibit is the first thing visitors encounter when they enter the museum and is made to encourage interaction with  “streets” of local San Jose and the surrounding Bay Area. 
+					<p>“Streets of the World” is a signature exhibit in the <a href="https://www.cdm.org/">San Jose Children’s Discovery Museum</a>. Designed for children aged 0-10, the exhibit is the first thing visitors encounter when they enter the museum and is made to encourage interaction with  “streets” of local San Jose and the surrounding Bay Area.</p> 
 
 					<p>In 2017, the exhibit had not been updated for 26 years, and the museum wanted a technology-based redesign of this well-loved exhibit.</p>
 				</div>
+				</div>
 				<hr>
+				<h2 class="center">Learning Space Design</h2>
+				<div class = "horizontal-flex flex-between">
 				<div class="vertical-flex sidebar">
-					<p>We created a short video showing our design process and final results.</p>
+					<p>After several rounds of in-person observation at the museum, we decided to prioritize the values of cohesion, reflection of identity, and inclusive play while integrating new technology into the signature exhibit. With these values, we designed an interactive projection-based landscape that would allow children to easily interact with the visual city around them and explore new locales. A shared interactive surface encourages collaborative play among children. </p>
+
+					<p>We created a lean prototype for an interactive, projection-based exhibit of live streets around the world. The emphasis of this project was on rapid prototypability, and were able to quickly test our idea on-site with a teammate hidden behind the screen responsible for the "interactions."</p>
 				</div>
 				<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/I3LsJNypEcS6Q32JFDmxCry6LyHmInTpWh8oOUuWl49Z7LF106CzmOg0ST9IMNcSWVXE2nX9aFBx277aTMCFCf7PYOVOPBO4dKH0_Ev7ZC9yuoZ0aXch3eQ4ugGP5-uW7fuY11ixQ7QInaokFrwqgLARo0nRNepSyUO_la3yZp2cbeky2x_6kr2G7QYWaTMZ1EJ0bX3pCPS_HgRzn7dNQIykWKaytJ98Gd-Emh-RgQZtGl_z3Ob1gRN-2qVguDQJWf_OzA1cokTcFNVo5o3lrd54xHPpLPwLOzQ-sRopYGDCPVfGL4pLaRW_tIbC_8s6liHdl6nQXs3Hfy03b7a-VdUjWtuHq2TLNpfszZKWnZ7B99wjPI_NO_b8l6S0OtEC5PzQZ-RDUiCO-N--1EtgLgIo_ky6wD3SjwFW_lXmgKVzgYctfjB-tGNfBVfF4lxHdmdDT1NzPCRI7SJVnsIGnBYLYAOKQFxoCOieAuMcnOiC3CW0SA8gznSxDEcW1EfrJSmJosHszBeDX63B5qIz94bYJ7tJFbceroDjd7rhcQ5nC_5b6yHHX72DL91YT4nTJTlWb93vXr5SAJ-uegQWWU7FwJbare2Tb8UdDrIewQ6ypyi4mfVvl2oZ10csT3G5cPUOkq8Swgj9g7H9gGTrXVOGro_3C1lAeyF7_4fVQ_3PmbYot8Sc4J9t_SeH2q4gvHUxaPNeiAa8I_mNPg9uT7f8MN2K_qkoLxUyeAU0oLOiROrRt4245Dc=w750-h652-no"></img>
+						<h4 class="caption">Choosing designs based on ease of prototyping</h4>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/xiTMdpor22tL_TQAmMrfQWncdQZCc7l92jukp6L8XxUylNekLiOOzKIGGuQ-QaSRNP9L-Qy6OD3dbkcygxdpUg1j8gmMlGlgm1aFekNI_WtrNAb4MlrbUPsHXbb3twffvnAbQd8rXYdOVJui__y6SGiO9hVNMQV9tmC3XyapxtrMRfnDR9mbnxJ_b94_s8mbaYnL8mjunm8vda2MiTJ_gEftaPP-Drvq0vBNtwK_x2yjObT3jltwsUFAO9nyms1O6nI_Gtf3Bue61XFq-lH-3TV4XUfQ3UVkfUz6H3A8OywklcqsW1u1f3Rnuc6nPLorBfHuxpF16JJQLiKHUyWMBrwpgP-otl7Dt-I9rZ2nsGPRcDozITegPylMGcTzgCBHYImBq6QT6CwDaPFnfHX5VZuVD-fZ8jpHq-cCDLKbtv01222uCdOEuzxmiJk581G1sTmK7XVkpikyq3w6TxzxFIWeDx7dCxYTwz1YWNCERwpWDMFScbW7AJizPzjP5g60-6p0z6qOen4qldWnBVHmuEIEnaC0qxSUToGPFw0ilZwjwx3u3Ca_LK3usGsnNXdDl84dW7sW8zXNeHQOWCEO4HFPA_AQU6S7zYBNxAaKpG-GI-jJ2V1nsFI2lcZbPUnSVwkWlFclw51mnEbFnZyw6iXWhU6fLe8Z2qQk772aUQaylrb8FA4YRfFVZnZ3pNjDbVZsb8jpBUdCTSldvP24Pw_frYyPX6BfbMAVxV3P4izyTAVkQ6bQPM8=w996-h664-no"></img>
+						<h4 class="caption">Prototyping our interactive project at the museum.</h4>
+					</div>
+				</div>
+				<hr>
+				<h2 class="center">Results</h2>
+				<div class = "horizontal-flex flex-between">
+				<div class="vertical-flex sideimg">
 					<iframe height="315"  src="https://www.youtube.com/embed/oFxxQoMXASE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="vertical-flex sidebar">
+					<p>We presented our final product, a blueprint of the exhibit redesign, to the museum for inclusion in the Institute of Museum and Library Services Grant. We also created a short video documenting our design process. </p>
 				</div>
 				</div>
 				
@@ -260,7 +398,7 @@
 			</div>
 				<h3 class="center">How Diverse are Double Majors?</h3>
 
-				<img src="https://previews.dropbox.com/p/thumb/AAzk9oC6Y9_eeo-qoNbFrfbUg_gz96gF_2Z6UvRqODbJ97beWGxvy6bOMv2qMToF3ACS5hsIOvYnM4KAG8Cj--Tep07M57O2-b9GJmF0HWbI6xKG-2u0CvWa1AhRhZycctKZIMe9NaGgnVyCsN7yeMUS7p95IX56BM2MjtQWxJD8gvyOnYPAXTkmIrJosLZUbMDWGJjq4u2gfBiOFdd1UHJ-ZIYf0IcjjxZNdgDL2AQD1V2QdqYOaSotUiffmR7HWQ877U1AtrhuYg6H7TA4VEiZhG-jaLmsQJ006l9fAFwHRdxCfMsk-yljGJWsoGmcjjXhMXD6RkEDmc12Ejd6PO0Cr60HAIgAOO8VEh9ROeBJNA/p.png?fv_content=true&size_mode=5"></img>
+				<img src="https://lh3.googleusercontent.com/VndTD4lqiao4BEsHNzSMW-p1uFfWBo1u3W9W2hTAEoACc5J-R81GOYHrBqNQzzbYKFhiFcYDdJatcLUj49COB8s6EcShgaM1u3T-MkgWofiN72VQxorhTFO_laav5H10zpp8MWQtTxBqckWcgN8tpQ-W4j6OI6_jl6_fzbwbvmlxOBnXnXtBTWwf144xOMJkyQFE9XoqfvboqlyokWZXPVoIy_oszGE6eBXnFaSFUkE7nDgn_vAOxGDC7udoMgFkYjJCSDgxqaTMnacMfm4BAYTMIEE2vRsjFns_LmjHB20YT_veFaiQZ0FHKT2wpOBjpRgVhEr4OPS_RoFfE8KncHh92hKTgNT1Ve_ibHljn-3fg0Svnb8IniILSRmzB8_Uy403ujv5EBFBaPdM9gunKxdHYUWXSEpiw2Fhq4PcrczE7FSBXqnwwCyMkfatzBfCAv3SsABjmBnpdxbDdBCZmBFA5G_sByiMWyfbqCyrkxASS545x7O5D57ucuryYHmjnV5P4WYbWpzp9nPouCS-iC-Hg0LyzFXY8qtBsyMRvAa1lpKlCnB8ZKpvJ72RedKNnybxr9nIhlUzHOGjL-eN9LJcSRfJxwS4VdqzNfXI3mQD5kLzGpeEkCtzSrZf-lmEWzK21sVPajdCG9MxUBFpBY6dJ6Ak9e4USx4tW75vfik1THLdX8fKkNnJ1nr5lA8JqWms0-vPrdd5bhfHjej6ApycbGPa1N6Si6CDioi9Ux2z1t5eMbA7PCU=s713-no"></img>
 				<p> A recent trend at Stanford, particularly within the past five years, has been increased efforts to make computer science education accessible to more students with diverse interests. In 2014, Stanford introduced its experimental CS + X joint major that combined computer science with humanities fields like English and History; in 2015, the Digital Humanities minor was launched. Within the computer science department, opportunities like the Magic Grant through partnership with the Brown Institute for Media Innovation encourage computer science students to collaborate with students in journalism and media. In the context of recent emphasis on interdisciplinary education, this visualization examines how many computer science coterms studied non-CS majors as undergraduates and how many double majors crossed the disciplinary bounds of engineering, humanities, and sciences.</p>
 
 				<p>While the computer science program at Stanford is growing in popularity, many students pursuing the coterminal degree come from unconventional backgrounds. Among double majors (students with two bachelor’s degrees), what fields are represented, and what fields are most commonly combined? To answer this question, this visualization displays occurrences of double majors among Stanford C.S. coterms from 2014-2019. Double majoring is relatively uncommon; between 2014 and 2019, twenty-four C.S. coterms had more than one undergraduate major. To have enough data to show meaningful patterns, the visualization does not encode year and instead displays data from the entire 6-year period as a sample of Stanford’s most recent classes of coterms.</p>
@@ -287,7 +425,7 @@
 
 				<div class = "horizontal-flex flex-between">
 					<div class="vertical-flex sideimg">
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAyltSJhdD9GAjEZdjI6zoXoLUV9LrjNoeKYjb8-rR_gZh4hzHJ8dQIdgUkSfJbnI_-6euRNkk0Fz-j0WA7AEDfslXyupfFFq0KBywc3B3aKvJfZ-nD6lfJwMrclVXEOf2x3Y0ku3QZR74Hu_kFHoaU-0cvmo5N0u8C7faZkwGr38KtXieqOUIg4USzT6sEHfsPQakqD4-T0OnYxBTMitnxvrd1IOzspolg1uAE-AVRCXS6u5Akd0nPwzj1jZiATc2w7KOCrp-pwLQMIX1uvATB5c02JZrhb-X3duZvrdonPpnE2YO_Ude07i-0lfM8Fl15EOERD2tbnlrBwDuZtm1UUkTjG8YwPp1kw8x7wmIgwaQ/p.png?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/yLSbvOCSJ8rTUyKkVxH99Ls2bx-BfhlE6OmZYKoPQ_4yDCLOZ1O40T29VFRieT9thNMG0eTCSYigOy-ym_J1hCvTtCNM23F75GvvN3lbJJxcC67oLrekGNKfhMN7hZ00k-cGQbnKv7D7wBNjbUCM2XNgW1lAoCOmphmwpAfB-g5taIK0i6JDzrST1xCGMroL9Kd9OinWggZ6cUthsyE5HRElU8Ec_F6c04j2g68O4BlUtF3SPsxLZs7YkXu_TJ3W9yrTJQ8lUgQzHnU9XdZ1dDmKi_9LCaPGcGTjsduDVtKCD92MA1vtPvgSCxWHerXTlxVzoiZiCtTNjre8pV92wkbGe7UL8IM9Lo0dg_IV9W3OQWBT3SgarIv-24B_ejQRXa053v-5eiN0pkP1nNswx3nlYcMn36W_tOcLpktUcXM3U47r5jcjeIXx6ew0GfChA8O1gk504_eCNJYJFUKuXrvGj9JeXCATjqM5FgeFj-XmqYSbZZtoh86vQ4m8mtg-f7vpP0yA3u2i89uSSHqpC5aGs-D2n2XNhUjgZDhGp1zU8jx4XGqJ0CPAA6X2mkVEVmb3oB6JGgbvdOpwL7Blh6-vkb09w-FAZFWFy1tAOKopuYdHy8yHP3HZeEFPIUaYZy_NWMOrDB6mG3_Rrni7HVCwxdw_oOldSP-nd8DRnF53K9zBNc0JGUfTSdq2gnLKO8T9yBCuZRDVYZ2LC9GoycWZ7xvRGUJkSV0PnBA0NOaARmnt8o5ZRAQ=w368-h294-no"></img>
 						<h4 class="caption">"OR", a poem written in C++</h4>
 					</div>
 				<div class="vertical-flex sidebar">
@@ -296,6 +434,65 @@
 				</div>
 				</div>
 				<a href="https://keywordpoems.wordpress.com/"><h2 class="center">Read the Poems</h2></a>
+
+			</div>
+			</div>
+			</div>
+
+			<!-- THREAD START -->
+			<div class="content" id="thread">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Thread</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center"> A Crowdsourced Solution to Secondhand Shopping </h3>
+
+				<h2 class="center">Background</h2>
+				<div class = "horizontal-flex flex-between">
+					<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/EYhw1KGpumVfOM37rH78wHZ8iLIknCJjMuQewSp4OPeOFA1-FaLUVUDOzyuGMeflseKUqx5fLsF1XgleZFduS8-e-i3UYXylcKD2vuUtD4KkgVK4rOkePwsTs6mSdanXl5OwvQ0HO4HDVzYmFadLXfF4kFKBPGhpOJ4-bz-uGStWq4KHnqQFc8MHzttMJ9sH8g_9oq6Adf816SHVtdSEM3wz0FqerJwdcFlDpYMaXC29wykYcmdqabc1ve5vIXpdS_QTQXcA0XJmT1_Xwa4mYANne8y_FxieflUPQ8Qun4bvn0iF_C5QzNO4x-saLQti8fr_XiXmJfFCGuXyU6sf4Asha0VWfhBfRZMbfHQBc4xvABes4yW-TuXKw4ovC6SjSNmwXdMbpaHXGAVoPk0gzd1T0zLvVOxL-NgYcMFhFe-cy3hWi67WfaSxPP22PEvuHp4TuaE3RPbd7uxSdmpMhUhpVvoTehUN-lCI6gfxhqSDG6r3fTHEdxtBkyVPcJG8utvNoXpharAMTnBSch71L6Y5s1w5sGM9b527YXDcpl4OBeL1gR2-Qw-2PA5cWYNQnRLUMDjHSdNTfX79nk4-G3hTx2y_-gazvH4NAHjrac9a8KNpbnz9lacbAR0PEyN1ldHCxOibOY1wVLgs99awtN_rPX3e9veXmdEXreunitVKXlyeypdMhtBrhL3tlgM2L5OnrpkMwMlGyRslR2KQ-8MBZ705K0v1KZ2Ba6vUhDLgff3oGxXKvmE=w468-h625-no"></img>
+						<h4 class="caption">Needfinding by interviewing the owner of a local thrift shop</h4>
+					</div>
+				<div class="vertical-flex sidebar">
+					<p>Without the financial freedom to shop at mainstream retail stores, low-income shoppers often spend hours at multiple thrift shops in search of a particular clothing item that fits their style, size, and fit. Even with this high effort, they frequently don’t find what they’re looking for.</p>
+
+					<p>Thread is a mobile app that connects low-income shoppers to their desired look in less time by pooling together the browsing capacities of other thrift shoppers in the area. Shoppers can submit “seeks”, or requests for specific items of clothing that they hope to find nearby. They can also submit “spots” when they find clothing that matches other shoppers’ requests. With Thread, shoppers can get what exactly what they want faster, because their entire community is shopping with them.</p>
+				</div>
+				</div>
+				<hr>
+				<h2 class="center">Solution</h2>
+				<div class = "horizontal-flex flex-between">
+				<div class="vertical-flex sidebar">
+				<p>Thread is a cashless, crowdsourced solution to secondhand shopping.</p>
+				<p> Shoppers who are looking for specific items, like a graphic tee, can request them using an image search or by uploading reference photos. Shoppers can also browse requests that others have made near them using a map interface and take photos of items that match. Requesters can browse matches and visit stores in-person to pick up items they like from a designated location. </p>
+				</div>
+				<div class="vertical-flex sideimg">
+					<img class="bodyImg" src="https://lh3.googleusercontent.com/09-UktnV8PurwcYT65EGL335mrE_CDNiK23cUDWISDSPKXenwvVs6wJvnj6p3yZAqkAlP3waTjGTtYhAYb2j_YZSXMRQokHbT1z2ib30iVnQDz8Yy16TRwoTIW4TU51NKXEwmdCD6bTdSqVxFBZSHFd76fYadbKE8aPaa4jUgFAv_21edMzuoWkdTqiqeWd0Pp-ux14RMzZD4h7WV2yYBad5flvhuu-A0f5-8djCqV2OSeakpMgQfiSjO_qTMVH4eyq3CpbeKto8JtCrBiOnNzgXARvbl4zvlrFkcNOYfBxDPRggWpEBjP5Al9K8357fJh7V_1ERKAtxS0oyHDYqoTbQL_0vbV9eQ91jj8UuKrnw4E4Vz9z3NXy2OO-LD4DxzdZKXOSCKkm5YDeUvBKjza6dF4U2azrQK9CbXgjxbTa4vzIMwzRaoM99GRwp1UrBpMJ42PgX9YPJPG_vACRF6TX5Y39m_hkDXyyv2GRBfWhHz5w2jAqNY6wXk4cEN93lFxqiJ5vPs2UaKEAurttozm3XCXBzttcq7EEIdWWxTqXeSuiSYO2c_B_3bz_vjmruht-q1fwUqpcJhY8xxEweUZ9i6_R8fVahpjc6NNbF2pzP5qE-4FBxvxcYJ7oe5wCkwOnczeY9_qr2NIVVebOgUpQH_440mdnoH5mMs6-D4HsuovaG9e17BoxTmiuz7oa3wk_KNRnomdhOtH8vx8w6hg96bzNf6loLq_2v8xLNwSeEHutqehFbbfA=w784-h595-no"></img>
+				</div>
+				</div>
+
+				<hr>
+				<h2 class="center">Recognition</h2>
+				<div class = "horizontal-flex flex-between">
+				<div class="vertical-flex sideimg">
+					<img class="bodyImg" src="https://lh3.googleusercontent.com/sJC6xUN0XCsthlN31cqxx43ZsX6-E0GO9Ql0WXUk6XdltmTdE3i4okMSLxlRuiSjpD6nDVaU0PXzy6UsD33uugll6BL1ahaalAVnIEMAu0_DJOhn66GQes1rS3XIhTjpu3UROBEH4Eiv4SmnmXvCYJ2O4f3QDWcHqVonqOX4koYsFVCuWxA_KL1vNiyBuabxJHnPgUFayHg8n0tXlIDGWzvgM9_JsGd5ZH1gLNQ_jdA-VyqlSh9Sch_sr9zbICbti2bV_SOIATwjJPJg5sdMeD93Ak_ts55RFLr5Z-2Y569TyK_jxkjXMD6qUMltp5grwVeYBC5JxoN2y-XMd4qRAi0xyDIrX4IZX-ITMba-6zsejVVRPMlVahcOuyRm3HdjFRGt2MA7LCeR3WgRN2Qe60Dkm54iSwe58O90E1WABh9Rv3vepZuyTJHASGgNng9VgoqGZ08bYyHcPQnOkzZjfmh-9q70kZGEd4JX_2GyXfm8vwdbUH-3VBbNXSkxFgVwgRTNFrAi9pwUs177Qf1ncHU75dTBT22rolPtnTz-UUQHBW5xvKdpxyODJ4Pb4WJmt7WqSBDxfcjHBf1oB--DGYiiq7RePUF9-Q0uKjTYsaqttY3F_8pEJNLwpNM0C5EjhTpJ4Zl1XGgWD6paUxg_Zjo_95Gs9arRD7I9i0fbkCD-uPjqLtQCkI57qYjmDKK8coxdem9Nc3-ZFXsb0TU1vqALTJPKdXYPKSQL39KNSt3oylRw6RP_PG8=w886-h664-no"></img>
+					<h4 class="caption">Team Thread at the project expo</h4>
+				</div>
+				<div class="vertical-flex sidebar">
+				<p>Our team presented Thread at the 2019 Human-Centered Design Expo at Stanford University and won Best Concept and first runner-up for Best Overall Project. </p>
+				<p>To learn more about the process for designing and building Thread, visit our project website.</p>
+				<a href="http://web.stanford.edu/class/cs147/projects/HumanCenteredAI/Thread/index.html#section-features"><h2 class="center">Project Website</h2></a>
+				<p>You can view the high-fidelity prototype of the final app <a href="https://expo.io/@isabellezhou/Thread">here.</a></p>
+				
+				</div>
+				</div>
+				
+				
+				
 
 			</div>
 			</div>
@@ -313,10 +510,9 @@
 			</div>
 				<h3 class="center"> An Interactive Exploration of Restaurant Inspection Scores in Palo Alto </h3>
 
-				<h2 class="center">Background</h2>
 				<div class = "horizontal-flex flex-between">
 					<div class="vertical-flex sideimg">
-						<img class="bodyImg" src="https://previews.dropbox.com/p/thumb/AAxxuRe0QzUy9vumUZuiEukJynRjWAvdpBzx6zCPT35JoCoBq6XW8RRITx0C_k8vTv3Pu0pzr6Q2fj46VkuihCCM05_rjdSQJM2buHAhmNntnjrECqAwBBaFehtZSlKMsRrpR_3GdjJTNX5FDO9Q1pxAs3Gxfp8apxLpu8nVUj1DAx3ZhlomVOfIIvzQZ1Lf1BvaiCgWX34yEZYz-Dv8Ct-Tp2_PlBV-vimxI99r_5yQnPGaae1pvmw4MbghYldq9Z_xWPmY-10HovXlUyLXEg_2_l97ZhmQZp1Dyyuu7vNtlo6I2If16OhS6kGu6CIlGOh8YhMmldY0t-DETxFAfsCPkKoMaWVvmn7uqN0qMUVKsQ/p.png?fv_content=true&size_mode=5"></img>
+						<img class="bodyImg" src="https://lh3.googleusercontent.com/a5mZXxXcvHOp8ZBKX2lZSOWz_7h8E0AgC2oECE0eiqxy1XuqYP6nzuLPlO-WmLRZttzMA1fg6e1VngcB50YUOuEXtwvEdZ1y97JPLdFDbFsRIDuLeP4CzVfsLcLhg2nZ-NL_wfXsYL8FTQaRFvHTO2m6dueizxVkO96nn5BBEeQsd5Xdla1Db59TxGS3Vd57uVlZInVQDJkdncMTKEiw18TNWs9EkIEOiHj_clvJrHROZ0i-fNPb-fLfi2YiGB3q2pOMtWQ5Tq_hRAiixVnymYXGox2LVfBNlOaeteCJNYm0aVO7BcSuOwKhJ07FBbQwCTaIxIu8O8w6980scxopUTgrwGTEJ1dFsu-GC0r0p3Rkz_gQ__WG7Dg_NBLzzBI_jztkW30yHyJQ7SauRfgt3oSs_Jl31XPuq3WF6pajfm8_J4ba-rRt-DrY93DBGOFoD1VyvzFDFS56kVrLfpRF9ZV3nFWhxcLaxOPzB7ez3FITqu_FPOa-QaeawRpKQJby80L5v_44whnxn7GA_IxYNCxIoo5jgu7cN7TjsXYTcIqVrOEslEC4q1CySquJLcYVDf8RSMn_d0oOsGfPmA3a-HAN6mWg0mf0OKn3twW82uQuwJvL_3cKy6SUS0GrNAeMyan3iIODI-9hmQ8npvDCj14tC-0DfUdKboWAvNPcKUmF6jTmKQc3TlusBB2uzKaI5mMjP4LU59KtR9l4fYo8AOiRlQUT5XPozDOQRdmHrDHuavIdtvvo9VU=w432-h308-no"></img>
 					</div>
 				<div class="vertical-flex sidebar">
 					<p>An interactive visualization of restaurant inspection scores in the South Bay area, created in d3. Data scraped from the <a href="https://services.sccgov.org/facilityinspection">Santa Clara County Department of Health</a> in January 2020.</p>
@@ -329,15 +525,15 @@
 			</div>
 
 			<div class="horizontal-flex flex-between">
-				<div class="vertical-flex square dataviz story mapping history web">
+				<div class="vertical-flex square dataviz story mapping history">
 					<div class="tile" onclick = "show('crrw')" style="background-image: url(images/crrw.png)">
 						<div class="overlay">
-						<h2 class="center overlay-text">A Virtual Reconstruction of Key Historic Sites</h2>
+						<h2 class="center overlay-text">A Digital Geography of the Transcontinental Railroad</h2>
 					</div>
 					</div>
 					<p class="label">Visualizing the Railroad</p>
 				</div>
-				<div class="vertical-flex square dataviz story web">
+				<div class="vertical-flex square dataviz story">
 					<div class="tile" onclick = "show('trolls')" style="background-image: url(images/trolls.png)">
 						<div class="overlay">
 						<h2 class="center overlay-text">Exploring Russian Interference in the 2016 U.S. Presidential Elections</h2>
@@ -369,7 +565,7 @@
 					</div>
 					<p class="label">Panther Power</p>
 				</div>
-				<div class="vertical-flex square ar art mobile">
+				<div class="vertical-flex square ar art">
 					<div class="tile" onclick = "show('soil')" style="background-image: url(images/soil.png)">
 					<div class="overlay">
 						<h2 class="center overlay-text">A Multimedia Tour of the Soils of Southern Stanford</h2>
@@ -401,7 +597,7 @@
 					</div>
 					<p class="label">Keyword Poetry</p>	
 				</div>
-				<div class="vertical-flex square mobile">
+				<div class="vertical-flex square">
 					<div class="tile" onclick = "show('thread')" style="background-image: url(images/thread.png)">				
 					<div class="overlay">
 						<h2 class="center overlay-text">A Crowdsourced Solution to Secondhand Shopping</h2>
@@ -409,7 +605,7 @@
 					</div>
 					<p class="label">Thread</p>
 				</div>
-				<div class="vertical-flex square tag1 dataviz web">
+				<div class="vertical-flex square tag1 dataviz">
 					<div class="tile" onclick = "show('restaurant')" style="background-image: url(images/restaurant.png)">	
 					<div class="overlay">
 						<h2 class="center overlay-text">An Interactive Exploration of Restaurant Inspection Scores in Palo Alto</h2>
@@ -442,7 +638,6 @@
 	// Hides any content box that is currently opened
 	function hide() {
 		var x = document.getElementsByClassName("opened");
-		console.log(x);
 		if (x.length == 0) return;
 		x[0].style.display = "none";
 		x[0].classList.remove("opened");
