@@ -42,6 +42,12 @@ a {
 	text-align: center;
 }
 
+.container {
+	position: relative;
+ 	width: 50%;
+  	max-width: 300px;
+}
+
 .content {
 	display: none;
 }
@@ -173,6 +179,8 @@ nav {
 	opacity: 0;
 	transition: opacity .25s ease-in-out;
 	visibility: hidden;
+	position: relative;
+	top: -400 ;
 }
 
 .overlay-text {
