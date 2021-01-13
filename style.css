@@ -147,7 +147,9 @@ hr {
 }
 
 iframe {
-	width: 100%;
+	width: 80%;
+	padding-left: 10%;
+	padding-right:10%;
 }
 
 img {
@@ -217,7 +219,6 @@ p {
 	align-self: center;
 	margin-top: 10%;
 }
-
 
 .subtitle {
 	font-family: 'Courier Prime', monospace;
