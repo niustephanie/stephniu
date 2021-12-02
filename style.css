@@ -52,6 +52,11 @@ a {
 	display: none;
 }
 
+.date {
+  margin-top: 10px;
+  margin-bottom: 0px
+}
+
 .entry {
 	padding-left: 10%;
 	color: gray;
@@ -275,18 +280,17 @@ p {
 }
 
 @-webkit-keyframes slide-in {
-      0% { opacity: 0; -webkit-transform: translateX(-10%); }   
-    100% { 
-    	opacity: 1; 
+      0% { opacity: 0; -webkit-transform: translateX(-10%); }
+    100% {
+    	opacity: 1;
     	display: inline;
     	-webkit-transform: translateY(0); }
 }
 
 @-moz-keyframes slide-in {
-      0% { opacity: 0; -moz-transform: translateX(-10%); }   
-    100% { 
-    	opacity: 1; 
+      0% { opacity: 0; -moz-transform: translateX(-10%); }
+    100% {
+    	opacity: 1;
     	display: inline;
     	-moz-transform: translateY(0); }
 }
-    
