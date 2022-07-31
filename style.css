@@ -24,6 +24,15 @@ a {
 
 }
 
+.attribution-big {
+	color: steelblue;
+	font-size: 14px;
+	font-family: 'Courier Prime', monospace;
+	margin-bottom: 2%;
+	text-align: right;
+
+}
+
 .back {
 	cursor: pointer;
 	font-family: 'Courier Prime', monospace;
@@ -218,6 +227,11 @@ nav {
 }
 
 p {
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.plain-link {
  	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
