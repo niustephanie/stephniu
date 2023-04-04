@@ -150,6 +150,7 @@ h1 {
 	font-family: 'Courier Prime', monospace;
 	font-style: italic;
 	font-size: 32;
+	margin-top: 10px;
 }
 
 h2 {
@@ -217,7 +218,7 @@ img {
 	text-align: center;
 	display: grid;
 	color: black;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 }
 
 nav {
