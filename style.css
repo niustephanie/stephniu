@@ -9,7 +9,7 @@
 a {
 	color: steelblue;
 	font-family: 'Courier Prime', monospace;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -192,12 +192,22 @@ img {
 	align-self: center;
 }
 
+.imgDesc {
+	width: 60%;
+	align-self: center;
+}
+
 .label {
 	font-family: 'Courier Prime', monospace;
 	text-align: center;
 	display: grid;
 	color: black;
 	margin-bottom: 15%;
+}
+
+li {
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
 }
 
 nav {
@@ -236,14 +246,8 @@ p {
 	font-size: 16px;
 }
 
-.poem-title {
-	color: black;
-	font-family: 'Courier Prime', monospace;
-	font-size: 18px;
-}
-
 .sidebar {
-	width: 42.5%;
+	width: 43.5%;
 }
 
 .sideimg {
