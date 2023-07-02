@@ -20,7 +20,7 @@
 
 	<body>
 		<div class = "vertical-flex margins">
-			<div class="horizontal-flex flex-between" style="margin-top: 7%;">
+			<div class="horizontal-flex flex-between nav-margin">
 				<h1 href="index.html" class="fade" style="font-size: 40px; margin-top: 0; height:40px" onclick=hide()>Stephanie Niu</h1>
 				<nav>
 					<a href="index.html" class="label fade selected">Work</a>
@@ -47,6 +47,43 @@
 				<p class="tag" id="art" onclick=filter("art")>art</p>
 			</div>
 			
+			<!-- FULBRIGHT START -->
+			<div class="content" id="livingmuseum">
+			<p></p>
+			<div class="text-container">
+			<div class="vertical-flex">
+			<div class="horizontal-flex flex-between">
+				<p class="back subtitle fade" onclick=hide()> < Back</p>
+				<h1>Living Museum of Christmas Island</h1>
+				<h1 class="hidden">Title</h1>
+			</div>
+				<h3 class="center"> Reanimating Christmas Island's Place-based History </h3>
+
+				<div class = "horizontal-flex flex-between">
+					<div class="vertical-flex sideimg">
+						<img class="bodyImg" src="https://livingmuseum.cx/images/gf_maps.png"></img>
+						<h4 class="caption">A "Talking Map" from the inagural public mapping event at the George Fam Centre</h4>
+					</div>
+				<div class="vertical-flex sidebar">
+    				<p><a href="https://livingmuseum.cx/index.html">Living Museum of Christmas Island</a> is a Fulbright research project that explores opportunities for community archiving to capture Christmas Island’s history through public mapping events, augmented reality walking tours, and an interactive photo exhibit.</p>
+
+    				<p>Christmas Island plays a key but neglected role in Australia’s history of industrial, racial, and social relations. From the late 1950s to the mid-1980s, Christmas Islanders fought to end a longstanding racial apartheid system on the island and demanded wage parity and citizenship rights by unionizing, demonstrating, and exercising collective power. The history of this struggle and its impacts on the present-day island, much of which remains in the memories of living islanders, is minimally documented for future generations. 
+    				By prioritizing Islanders’ spatial emotions, narratives, and memories, this project aims to better understand how present-day Islanders can help shape the way Christmas Island’s history of social change is understood and remembered. </p>
+
+				</div>
+				<div class="vertical-flex">
+				<p class="center">"Living Museum of Christmas Island" is an ongoing project. Visit the project website to learn more.</p>
+				<a href="https://livingmuseum.cx/index.html"><h2 class="center">Project Website</h2></a>
+				<img class="center" src="https://livingmuseum.cx/images/gaze.png"></div>
+			</div>
+					
+				
+
+			</div>
+			</div>
+			</div>
+
+
 			<!-- CRRW START -->
 			<div class="content" id="crrw">
 			<p></p>
@@ -562,15 +599,16 @@
 			</div>
 
 			<div class="horizontal-flex flex-between">
-				<div class="vertical-flex square dataviz story mapping history">
-					<div class="tile" onclick = "show('crrw')">
-						<img class="tile lazy" src="images/crrw_small.png" data-src="https://lh3.googleusercontent.com/z97xMoFaZo_G5RMg4ZHyyd0LhwUkQQWy8LDCRjgA8LP27P5tT4E1o2eoOcKzXAtfxi6KLtOjkiNh_2R5BYH6nPFI3Du5OHxTevZfgAn0vVqzoLgFcAG4wbUbJBds0VHW_N5xTY4UXJcunOrRwuWWNxsF9deYlxu1YUkQH-DPVcRPimJpSWe33X3mo_S6DrePQ7IaJM05szAjFghTBllG2cHj-SiYVFMgrJjZeoshCePkbI_oIgL8adfruzWynt011hg1u8-4wHdy3oj0x1LZ5Jy8ejNogbDRVdsKDXXu3uBh8V1kgFOqcMEU-4VNzgI8hmJd9bwr2SL63CmCsDq_N0HsSTamCwdq075C2bTjnY7zm3CyhPdnktF_P5ACk8iDmiYKzeIFeYKFcEUyY9pG-vqcFiHQmbLt929zQc843u4oFMjKpWK0AiUfVlNPaY2418rSqF2X7LZxfa9Vjk3aLZ7FfBzx5sGariAwo7OFjF7esVGGSOwwuLxtZTa-gE6pYPf3GKS19HlN1g2UdPxKuq3M7MgfV8l15A5OOEqzxuEQx7EhhUkF7deNPwzYP6zW5kWLMPBQQ0rRhgjdamR4aoYFfTFqNt4T8ncIFrLvt6nmmrRFuZbIdARjZBTtSDoBoA3zOm9gwnppoLpQz4vtKc4C_aMf80QWkj4wCtlCTPAl6CI4MXpeRx_JJhCsOvZA0Nhltg1RYELjCZ9Aod4gFQFzRFX7BfsHLsUlztoHxhogxb6J_DArSzw=s500-no">
+				<div class="vertical-flex square story history mapping art ar">
+					<div class="tile" onclick = "show('livingmuseum')">
+						<img class="tile lazy" src="images/kampong_small.png" data-src="images/kampong.png">
 						<div class="overlay">
-						<h2 class="center overlay-text">A Digital Geography of the Transcontinental Railroad</h2>
+						<h2 class="center overlay-text">Reanimating Christmas Island's Place-based History</h2>
 						</div>
 					</div>
-					<p class="label">Visualizing the Railroad</p>
+					<p class="label">Living Museum of Christmas Island</p>
 				</div>
+
 				<div class="vertical-flex square dataviz story">
 					<div class="tile" onclick = "show('trolls')">
 						<img class="tile lazy" src="images/trolls_small.png" data-src="https://lh3.googleusercontent.com/AC-sMpl0CrW9zyI7Ui8-9RyBLRFy7DcwS4IhFFTGASiR8NmUfzw16h3clWUixX7GSgu_GBPNQThn4NBT3UvWM7im0Yn_BKEkpifYGPGsL70k5aQSMw7OadfRbrpATpjxtAZV0_ctR9CQLaktCOAFDuNd66DlPlhDnETO5BWFrq-NLCuLuf5WRNsAXnWrjvBK3bFbSQDC1LZjnVBABrbus2nyboqGGsV178jusmp76_-2biFdQ97bfmfswq_9LOaQ1V195E1CFK9wHWILGRzyBGJ-99cvCOnw08yAZaz8umfmLle73Jq8AfMdPUDx8ioK3mYF2tTW7eIcuC84IfXctDm0VewvqtO26pSnjNzsKf9X0qavzKDaedTyZYJEWYCbS97hHNYRrTZT5K8CbqQPwrVw6fOZfljsDZL-neGV55vieTHsLxhvsdlbXdi4Gjaas7Lrba4PhEhSkTiGtHVJ30loFKEf1vNVxw4XMrRkdwt-vFwXnH2QGWrDck-CzvkBasKCDVgrvwRq1KOyZ8d0je2iTAtooRmBlo8NGe43Uw_3SVQFkOizQdngwU1UDgpJvGq6qkhW3LdIN6jxFprj74XxXCtm463CsLbn4GeQg1a09bDsmE4nDRcfYjhYFFkO5y9Gx6CU7ARiyM3yGIbazbMKgHWVYoMXkNNYFxX4sWv8aJryr7CYbWU7lAmHB3TL4VBDQxd7-DdNfJSZMSRGiJS-4RxdI7d6PVna1KlIEMP4nwZjbFL8QR4=s500-no">
@@ -580,6 +618,17 @@
 					</div>
 					<p class="label">Unmasking the Trolls</p>
 				</div>
+
+				<div class="vertical-flex square dataviz story mapping history">
+					<div class="tile" onclick = "show('crrw')">
+						<img class="tile lazy" src="images/crrw_small.png" data-src="https://lh3.googleusercontent.com/z97xMoFaZo_G5RMg4ZHyyd0LhwUkQQWy8LDCRjgA8LP27P5tT4E1o2eoOcKzXAtfxi6KLtOjkiNh_2R5BYH6nPFI3Du5OHxTevZfgAn0vVqzoLgFcAG4wbUbJBds0VHW_N5xTY4UXJcunOrRwuWWNxsF9deYlxu1YUkQH-DPVcRPimJpSWe33X3mo_S6DrePQ7IaJM05szAjFghTBllG2cHj-SiYVFMgrJjZeoshCePkbI_oIgL8adfruzWynt011hg1u8-4wHdy3oj0x1LZ5Jy8ejNogbDRVdsKDXXu3uBh8V1kgFOqcMEU-4VNzgI8hmJd9bwr2SL63CmCsDq_N0HsSTamCwdq075C2bTjnY7zm3CyhPdnktF_P5ACk8iDmiYKzeIFeYKFcEUyY9pG-vqcFiHQmbLt929zQc843u4oFMjKpWK0AiUfVlNPaY2418rSqF2X7LZxfa9Vjk3aLZ7FfBzx5sGariAwo7OFjF7esVGGSOwwuLxtZTa-gE6pYPf3GKS19HlN1g2UdPxKuq3M7MgfV8l15A5OOEqzxuEQx7EhhUkF7deNPwzYP6zW5kWLMPBQQ0rRhgjdamR4aoYFfTFqNt4T8ncIFrLvt6nmmrRFuZbIdARjZBTtSDoBoA3zOm9gwnppoLpQz4vtKc4C_aMf80QWkj4wCtlCTPAl6CI4MXpeRx_JJhCsOvZA0Nhltg1RYELjCZ9Aod4gFQFzRFX7BfsHLsUlztoHxhogxb6J_DArSzw=s500-no">
+						<div class="overlay">
+						<h2 class="center overlay-text">A Digital Geography of the Transcontinental Railroad</h2>
+						</div>
+					</div>
+					<p class="label">Visualizing the Railroad</p>
+				</div>
+				
 				<div class="vertical-flex square story art">
 					<div class="tile" onclick = "show('island')">
 					<img class="tile lazy" src="images/island_small.png" data-src="https://lh3.googleusercontent.com/pM7pRgNVFZme2AG_HX73-KoIRdtwFBZAwaOlSRE_E7avTB2x1MDj5LnTGhzmL71uxg19dPd1WOLODoMDiRaxSMoPqPE9aQh7dctH_EV0J5d5Py_FffPR-YmWHkQXz2LKgxIIUUSJgd2vzZXjbZDigeVoMQWDica0rcrrHYx2dszivKfF19xxhTiPtOrzffCbHV0q_sFsBydbjSxViwGri01n31Mc2sR5QawaAAdmK1V-7pdVqsME64pAd5Olrdhb37fBytBqfzXySul4r_gtuogmgwb8s6lWbSQg93azU9iOR8rZ6MJjdN58oMoMdpVoAbqKJocIpXtNBFs-zTPgzYr6HCVYTPRQeJ76k51jvawVGtUB_xirfikKSJGgoDjdWv4T7QYz7WzFGPsvxFN-xml_n9qQnNdSTt8wXwJBQ1pOFY4rAV70Nyl654MqzxEnUd2kqheBmQ-CGIMgt0CmLEwSrd5RF6NkTCBPUsGUBAApBon1YRJDf09_0Y_MIfXfZObKiNLj4KxWAP7xWmL8X16KW7yScFSrKhPpUM-_swe-JI6v8FKpd6bpypu_zHYIYDTOKWSPziqMG9GXEp7WsmBJ7Miej5bxQJB6_A9AgwbWR_ee0XpVy45PWnrD2cMKroR95gEV7s8ZHZ7X8Mx8PyK4QP289NZknw5jLryBFin8CrJHBYIGiBOrr_VgfvUnoqVBxr6_5SvlE8Minm6xkvlJGUg9oNPzDc9xDlnKummez_6Yj7AMMUw=s500-no">

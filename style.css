@@ -229,6 +229,10 @@ nav {
 	width: 40%;
 }
 
+.nav-margin {
+	margin-top: 5%;
+}
+
 .overlay {
 	display: inline-block;
 	width: var(--tile-width);
