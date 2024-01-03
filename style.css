@@ -92,7 +92,7 @@ button:hover {
 }
 
 .dropdown-content {
-	display: none;
+  display: none;
 	position: absolute;
 }
 
@@ -219,6 +219,14 @@ img {
 	display: grid;
 	color: black;
 	margin-bottom: 5%;
+}
+
+.label-dropdown {
+	font-family: 'Courier Prime', monospace;
+	text-align: left;
+	display: grid;
+	color: black;
+	margin-bottom: 0%;
 }
 
 nav {
