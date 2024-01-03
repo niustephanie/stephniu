@@ -47,7 +47,7 @@ button {
 	background-color: black;
 	border: none;
 	color: white;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 15%;
 	margin-right: 15%;
 	width: 70%;
@@ -227,6 +227,10 @@ img {
 	display: grid;
 	color: black;
 	margin-bottom: 0%;
+}
+
+li {
+	padding-bottom: 8px;
 }
 
 nav {
