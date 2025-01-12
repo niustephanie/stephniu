@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
   --tile-width: 400px;
@@ -8,17 +9,16 @@
 
 a {
 	color: steelblue;
-	font-family: 'Courier Prime', monospace;
-	font-size: 16px;
+	font-family: 'EB Garamond';
+	font-size: 18px;
 	text-align: center;
 	text-decoration: none;
 }
 
 .attribution {
 	color: gray;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Courier Prime', monospace;
-	margin-bottom: 2%;
 	margin-right: 5%;
 	text-align: right;
 
@@ -39,11 +39,16 @@ a {
 	font-size: 24px;
 }
 
+body, div {
+  background-color: white;
+}
+
 .bodyImg {
 	margin-left: 0;
 }
 
 button {
+	/*background-color: #92CBDF;*/
 	background-color: black;
 	border: none;
 	color: white;
@@ -54,6 +59,7 @@ button {
 }
 
 button:hover {
+	/*background-color: #264E97;*/
 	background-color: #555555;
 	cursor: hand;
 }
@@ -166,7 +172,7 @@ h3 {
 
 h4 {
 	color: gray;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Courier Prime', monospace;
 }
 
@@ -264,8 +270,9 @@ nav {
 }
 
 p, li {
- 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+ 	font-family: 'EB Garamond';
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .plain-link {
@@ -303,15 +310,13 @@ p, li {
 	border-radius: 5px;
 	cursor: pointer;
 	font-family: 'Courier Prime', monospace;
-	font-size: 14px;
-	height: 14px;
+	font-size: 16px;
 	padding: 5px;
 	margin-right: 15px;
 	margin-top: 20px;
 }
 
 .text-container {
-	background-color: white;
 	margin-bottom: 5%;
 	padding: 2%;
 }
