@@ -110,6 +110,11 @@ button:hover {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.event-name {
+	font-size: 20px;
+	line-height: 28px;
+}
+
 .fade {
 	cursor: pointer;
 	opacity: 1;
